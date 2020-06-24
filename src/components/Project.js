@@ -1,19 +1,61 @@
-import React, { Component } from 'react'
+import React from 'react'
+import { Link } from 'react-router-dom'
+import styled from 'styled-components'
 
-const Container = styled.article`
-  display: grid;
-  grid-template-columns: 70% 30%;
-  background-color: lightcoral;
+const Figure = styled.figure`
+  background-color: yellow;
+  display: flex;
 `
 
-class Project extends Component {
-  render() {
+const Img = styled.img`
+  /* height: 80%; */
+  width: 100%;
+`
+
+const ThreeByTwoGrid = styled.article`
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-column-gap: 1rem;
+`
+
+const ProjectHeader = styled.h3`
+  background-color: red;
+  text-transform: uppercase;
+  padding: 1rem 0;
+`
+
+const ViewMoreBtn = styled.button`
+  text-transform: uppercase;
+
+  /*  transition: all 0.2s; */
+`
+
+export const generateSixImgs = (data) => {
+  const mapSixImgs = data.slice(0, 6).map((item) => {
     return (
-      <>
-        <Container></Container>
-      </>
+      <Figure>
+        <Img src={item.img} alt='' />
+      </Figure>
     )
-  }
+  })
+  return mapSixImgs
 }
 
-export default Project
+export const Project = ({ title, project, category }) => {
+  let path = ''
+  if (category === 'residential') {
+    path = '/residential'
+  } else if (category === 'commercial') {
+    path = '/commercial'
+  }
+
+  return (
+    <>
+      <ProjectHeader>{title}</ProjectHeader>
+      <ThreeByTwoGrid>{generateSixImgs(project)}</ThreeByTwoGrid>
+      <Link to={path}>
+        <ViewMoreBtn>view more</ViewMoreBtn>
+      </Link>
+    </>
+  )
+}

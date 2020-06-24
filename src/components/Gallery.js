@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import { ProjectOverview } from './ProjectOverview'
+import { Project } from './Project'
 import * as data from '../data'
-
-
 
 const Wrapper = styled.main`
   background-color: lightblue;
@@ -21,36 +19,57 @@ const ProjectTypeHeader = styled.h2`
 `
 
 class Gallery extends Component {
+
+
   render() {
     return (
       <Wrapper>
         <Container>
           <ProjectTypeHeader>residential</ProjectTypeHeader>
 
-          <ProjectOverview title='Apartment Awe' project={data.apartmentaweData} />
-         
-          {/* <ProjectOverview title='Ruthven Townhouse' project={data.ruthvenTownhouseData} /> */}
-          
-          <ProjectOverview title='Sunrise City Apartment' project={data.sunriseCityApartmentData} />
-          
-          <ProjectOverview title='Topaz Caolo Apartment' project={data.topazCaoloApartmentData} />
+          <Project
+            title='Apartment Awe'
+            project={data.apartmentaweData}
+            category='residential'
+          />
 
-          <ProjectOverview title='Apartment Kitchen Remodel' project={data.apartmentKitchenRemodelData} />
+          {/* <Project title='Ruthven Townhouse' project={data.ruthvenTownhouseData} /> */}
 
+          <Project
+            title='Sunrise City Apartment'
+            project={data.sunriseCityApartmentData}
+            category='residential'
+          />
 
+          <Project
+            title='Topaz Caolo Apartment'
+            project={data.topazCaoloApartmentData}
+            category='residential'
+          />
 
+          <Project
+            title='Apartment Kitchen Remodel'
+            project={data.apartmentKitchenRemodelData}
+            category='residential'
+          />
 
+          <ProjectTypeHeader>commercial</ProjectTypeHeader>
 
-
-
-
-
-          <ProjectTypeHeader>commerical</ProjectTypeHeader>
-
-          <ProjectOverview title='Sweet Delights Cafe' project={data.sweetDelightsData} />
-          <ProjectOverview title='Golden Hour Cafe' project={data.goldenHourCafeData} />
-          <ProjectOverview title='Serenity Dental' project={data.serenityDentalData} />
-
+          <Project
+            title='Sweet Delights Cafe'
+            project={data.sweetDelightsData}
+            category='commercial'
+          />
+          <Project
+            title='Golden Hour Cafe'
+            project={data.goldenHourCafeData}
+            category='commercial'
+          />
+          <Project
+            title='Serenity Dental'
+            project={data.serenityDentalData}
+            category='commercial'
+          />
         </Container>
       </Wrapper>
     )
