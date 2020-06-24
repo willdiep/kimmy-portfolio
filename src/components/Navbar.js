@@ -25,8 +25,8 @@ class Navbar extends Component {
     return (
         <Nav>
           <ul>
-            <li>Commercial</li>
             <li>Residential</li>
+            <li>Commercial</li>
             <li>About</li>
             <li>Contact</li>
             <li>Resume</li>
