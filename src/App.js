@@ -5,6 +5,7 @@ import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
 import ProjectDetails from './components/ProjectDetails'
+import Footer from './components/Footer'
 import * as data from './data'
 import styled from 'styled-components'
 
@@ -42,6 +43,8 @@ function App() {
             </Route>
           </Switch>
         </Layout>
+
+        <Footer />
       </div>
     </Router>
   )
