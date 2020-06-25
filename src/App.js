@@ -6,8 +6,13 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import ProjectDetails from './components/ProjectDetails'
 import Footer from './components/Footer'
+
 import * as data from './data'
+
+import './styles/reboot.css'
 import styled from 'styled-components'
+import { GlobalStyle } from './styles/GlobalStyles'
+import './assets/fonts/Josefin_Sans/static/JosefinSans-Thin.ttf'
 
 export const Layout = styled.main`
   background-color: lightblue;
@@ -16,37 +21,40 @@ export const Layout = styled.main`
 
 function App() {
   return (
-    <Router>
-      <div className='App'>
-        <Navbar />
+    <>
+      <GlobalStyle />
+      <Router>
+        <div className='App'>
+          <Navbar />
 
-        <Layout>
-          <Switch>
-            <Route path='/residential/:id'>
-              <ProjectDetails data={data} />
-            </Route>
+          <Layout>
+            <Switch>
+              <Route path='/residential/:id'>
+                <ProjectDetails data={data} />
+              </Route>
 
-            <Route path='/commercial/:id'>
-              <ProjectDetails data={data} />
-            </Route>
+              <Route path='/commercial/:id'>
+                <ProjectDetails data={data} />
+              </Route>
 
-            <Route path='/about'>
-              <About />
-            </Route>
+              <Route path='/about'>
+                <About />
+              </Route>
 
-            <Route path='/contact'>
-              <Contact />
-            </Route>
+              <Route path='/contact'>
+                <Contact />
+              </Route>
 
-            <Route path='/'>
-              <Home /> {/* Links to <Gallery /> */}
-            </Route>
-          </Switch>
-        </Layout>
+              <Route path='/'>
+                <Home /> {/* Links to <Gallery /> */}
+              </Route>
+            </Switch>
+          </Layout>
 
-        <Footer />
-      </div>
-    </Router>
+          <Footer />
+        </div>
+      </Router>
+    </>
   )
 }
 
