@@ -4,8 +4,8 @@ import Navbar from './components/Navbar'
 import Home from './pages/Home'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import Commercial from './pages/Commercial'
-import Residential from './pages/Residential'
+import ProjectDetails from './components/ProjectDetails'
+import * as data from './data'
 
 function App() {
   return (
@@ -14,12 +14,12 @@ function App() {
         <Navbar />
 
         <Switch>
-          <Route path='/commercial'>
-            <Commercial />
+          <Route path='/residential/:id'>
+            <ProjectDetails data={data} />
           </Route>
 
-          <Route path='/residential'>
-            <Residential />
+          <Route path='/commercial/:id'>
+            <ProjectDetails data={data} />
           </Route>
 
           <Route path='/about'>
@@ -31,7 +31,7 @@ function App() {
           </Route>
 
           <Route path='/'>
-            <Home />
+            <Home /> {/* Links to <Gallery /> */}
           </Route>
         </Switch>
       </div>

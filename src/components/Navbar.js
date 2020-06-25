@@ -32,10 +32,10 @@ class Navbar extends Component {
             <Link to='/'>Home</Link>
           </li>
           <li>
-            <Link to='/residential'>Residential</Link>
+            <Link to='/not-set'>Residential</Link>
           </li>
           <li>
-            <Link to='/commercial'>Commercial</Link>
+            <Link to='/not-set'>Commercial</Link>
           </li>
           <li>
             <Link to='/about'>About</Link>

@@ -41,12 +41,13 @@ export const generateSixImgs = (data) => {
   return mapSixImgs
 }
 
-export const Project = ({ title, project, category }) => {
+export const Project = ({ title, project, category, id}) => {
+
   let path = ''
   if (category === 'residential') {
-    path = '/residential'
+    path = `/residential/${id}`
   } else if (category === 'commercial') {
-    path = '/commercial'
+    path = `/commercial/${id}`
   }
 
   return (
