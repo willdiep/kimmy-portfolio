@@ -1,13 +1,6 @@
 import React from 'react'
-import styled from 'styled-components'
-// import ProjectDetails from './ProjectDetails'
 import { withRouter } from 'react-router'
-
-// path - (string) The path pattern used to match. Useful for building nested <Route>s
-// url - (string) The matched portion of the URL. Useful for building nested <Link>s
-
-// Consider the route "/users/:userId". match.
-
+import styled from 'styled-components'
 
 const Img = styled.img`
   height: 300px;
