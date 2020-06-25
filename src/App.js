@@ -8,13 +8,9 @@ import ProjectDetails from './components/ProjectDetails'
 import * as data from './data'
 import styled from 'styled-components'
 
-export const Wrapper = styled.main`
+export const Layout = styled.main`
   background-color: lightblue;
-`
-
-export const Container = styled.div`
   margin: 0 3rem;
-  background-color: lightgreen;
 `
 
 function App() {
@@ -23,31 +19,29 @@ function App() {
       <div className='App'>
         <Navbar />
 
-        <Wrapper>
-          <Container>
-            <Switch>
-              <Route path='/residential/:id'>
-                <ProjectDetails data={data} />
-              </Route>
+        <Layout>
+          <Switch>
+            <Route path='/residential/:id'>
+              <ProjectDetails data={data} />
+            </Route>
 
-              <Route path='/commercial/:id'>
-                <ProjectDetails data={data} />
-              </Route>
+            <Route path='/commercial/:id'>
+              <ProjectDetails data={data} />
+            </Route>
 
-              <Route path='/about'>
-                <About />
-              </Route>
+            <Route path='/about'>
+              <About />
+            </Route>
 
-              <Route path='/contact'>
-                <Contact />
-              </Route>
+            <Route path='/contact'>
+              <Contact />
+            </Route>
 
-              <Route path='/'>
-                <Home /> {/* Links to <Gallery /> */}
-              </Route>
-            </Switch>
-          </Container>
-        </Wrapper>
+            <Route path='/'>
+              <Home /> {/* Links to <Gallery /> */}
+            </Route>
+          </Switch>
+        </Layout>
       </div>
     </Router>
   )
