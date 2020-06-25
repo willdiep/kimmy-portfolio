@@ -7,15 +7,25 @@ const Container = styled.article`
   /* margin: 0 1rem; */
   display: grid;
   grid-template-columns: 70% 30%;
+  grid-template-areas: 'main sidebar';
+
+  @media (max-width: 768px) {
+    display: grid;
+    /* grid-template-columns: 1fr; */
+    grid-template-areas: 'sidebar' 'main';
+  }
 `
 
 const ImgSection = styled.section`
   background-color: green;
+  grid-area: main;
 `
 
-const DetailSection = styled.section`
+const DetailSection = styled.aside`
   background-color: lightpink;
   margin: 2rem 3rem;
+  grid-area: sidebar;
+
   div {
     position: fixed;
   }
@@ -27,11 +37,10 @@ const Img = styled.img`
 `
 
 const ProjectDetails = (props) => {
-
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
-  
+
   const pathId = props.match.params.id.toLowerCase().split('-').join('')
 
   let projectDataArray
