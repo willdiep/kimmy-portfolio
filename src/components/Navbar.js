@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import {  Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+import resumePDF from '../assets/resume.pdf'
 
 const Nav = styled.nav`
   /* background-color: orange; */
@@ -8,6 +9,7 @@ const Nav = styled.nav`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  margin: 0 3rem;
 
   ul {
     display: flex;
@@ -23,27 +25,43 @@ const Nav = styled.nav`
   }
 `
 
+const LeftNav = styled.div`
+  flex-grow: 1;
+`
+
+const RightNav = styled.div`
+  display: flex;
+
+  div {
+    margin-left: 2rem;
+  }
+`
+
 class Navbar extends Component {
   render() {
     return (
       <Nav>
-        <ul>
-          <li>
-            <Link to='/'>Home</Link>
-          </li>
-          <li>
+        <LeftNav>
+          <Link to='/'>Kimmy</Link>
+        </LeftNav>
+
+        <RightNav>
+          <div>
             <Link to='/not-set'>Residential</Link>
-          </li>
-          <li>
+          </div>
+          <div>
             <Link to='/not-set'>Commercial</Link>
-          </li>
-          <li>
+          </div>
+
+          {/* <div>
             <Link to='/about'>About</Link>
-          </li>
-          <li>
-            <Link to=''>Resume</Link>
-          </li>
-        </ul>
+          </div> */}
+
+          <div>
+            {/* <Link to='/resume'>Resume</Link> */}
+            <a href={resumePDF}>Resume</a>
+          </div>
+        </RightNav>
       </Nav>
     )
   }

@@ -2,8 +2,8 @@ import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import Home from './pages/Home'
-import About from './pages/About'
-import Contact from './pages/Contact'
+// import About from './pages/About'
+
 import ProjectDetails from './components/ProjectDetails'
 import Footer from './components/Footer'
 
@@ -13,6 +13,7 @@ import './styles/reboot.css'
 import styled from 'styled-components'
 import { GlobalStyle } from './styles/GlobalStyles'
 import './assets/fonts/Josefin_Sans/static/JosefinSans-Thin.ttf'
+
 
 export const Layout = styled.main`
   background-color: lightblue;
@@ -37,13 +38,9 @@ function App() {
                 <ProjectDetails data={data} />
               </Route>
 
-              <Route path='/about'>
+              {/* <Route path='/about'>
                 <About />
-              </Route>
-
-              <Route path='/contact'>
-                <Contact />
-              </Route>
+              </Route> */}
 
               <Route path='/'>
                 <Home /> {/* Links to <Gallery /> */}

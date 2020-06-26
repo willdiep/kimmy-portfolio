@@ -8,7 +8,6 @@ const Figure = styled.figure`
 `
 
 const Img = styled.img`
-  /* height: 80%; */
   width: 100%;
 `
 
