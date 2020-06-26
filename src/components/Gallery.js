@@ -9,6 +9,7 @@ const ProjectTypeHeader = styled.h2`
   text-align: center;
   padding: 3rem 0;
   background-color: lightgoldenrodyellow;
+  padding-top: ${props => (props.commercial && '7rem' )};
 `
 
 class Gallery extends Component {
@@ -54,7 +55,9 @@ class Gallery extends Component {
             type={data.apartmentKitchenRemodelData[0].type}
           />
         </LazyLoad>
-        <ProjectTypeHeader>commercial</ProjectTypeHeader>
+
+
+        <ProjectTypeHeader commercial>commercial</ProjectTypeHeader>
 
         <LazyLoad height={200} offset={100} once >
           <Project
