@@ -1,6 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
+
+// import ImgModal from './ImgModal'
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 
@@ -38,10 +41,6 @@ const OverlayContainer = styled.div`
   align-items: center;
 `
 
-// const OverlaySymbolContainer = styled.div`
-//   background-color: white;
-// `
-
 const Figure = styled.figure`
   /* background-color: yellow; */
   display: flex;
@@ -55,22 +54,26 @@ const Figure = styled.figure`
   }
 `
 
-const AnchorModal = styled.a``
+// const AnchorModal = styled.a``
 
 const ViewMoreBtn = styled.button`
   text-transform: uppercase;
   /*  transition: all 0.2s; */
 `
 
-export const generateSixImgs = (data) => {
+const generateSixImgs = (data) => {
+  
   const mapSixImgs = data.slice(0, 6).map((item) => {
+
+    const overlayClick = () => {
+      console.log('clicked')
+    }
+    
     return (
       <Figure>
         <Img src={item.img} alt='' />
-        <OverlayContainer>
-          {/* <OverlaySymbolContainer> */}
+        <OverlayContainer onClick={() => overlayClick()}>
           <FontAwesomeIcon icon={faSearchPlus} color='white' size='3x' />
-          {/* </OverlaySymbolContainer> */}
         </OverlayContainer>
       </Figure>
     )
