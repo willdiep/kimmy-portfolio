@@ -59,6 +59,7 @@ const ViewMoreBtn = styled.button`
 export class Project extends Component {
   state = {
     imgModalClicked: false,
+    imgId: 0
   }
 
 
@@ -67,7 +68,7 @@ export class Project extends Component {
       {
         imgModalClicked: true,
       },
-      console.log('img clicked')
+      // console.log('img clicked')
     )
   }
 
@@ -76,7 +77,7 @@ export class Project extends Component {
       {
         imgModalClicked: false
       },
-      console.log('X clicked')
+      // console.log('X clicked')
     )
   }
 
@@ -85,15 +86,23 @@ export class Project extends Component {
       {
         imgModalClicked: false
       },
-      console.log('escape key down')
+      // console.log('escape key down')
     )
+  }
+
+  handleImgId = (id) => {
+    // console.log(id)
+    this.setState({
+      imgId: id
+    })
   }
 
   generateSixImgs = (data) => {
     const mapSixImgs = data.imgCollection.slice(0, 6).map((item) => {
+      // console.log(item)
       return (
-        <Figure>
-          <Img src={item.img} alt='' />
+        <Figure onClick={() => this.handleImgId(item.id)}>
+          <Img key={item.id} src={item.img} alt='' />
           <OverlayContainer
           onClick={() => this.hanndleOverlayClick()}>
             <FontAwesomeIcon icon={faSearchPlus} color='white' size='3x' />
@@ -106,27 +115,29 @@ export class Project extends Component {
 
 
   render() {
-    const { title, project, category, urlPath } = this.props
+    const { projectData } = this.props
 
-    // console.log(urlPath)
+    // console.log('project')
 
     let path = ''
-    if (category === 'residential') {
-      path = `/residential/${urlPath}`
-    } else if (category === 'commercial') {
-      path = `/commercial/${urlPath}`
+    if (projectData.category === 'residential') {
+      path = `/residential/${projectData.urlPath}`
+    } else if (projectData.category === 'commercial') {
+      path = `/commercial/${projectData.urlPath}`
     }
 
     return (
       <Container>
-        <ProjectHeader>{title}</ProjectHeader>
-        <ThreeByTwoGrid>{this.generateSixImgs(project)}</ThreeByTwoGrid>
+        <ProjectHeader>{projectData.title}</ProjectHeader>
+        <ThreeByTwoGrid>{this.generateSixImgs(projectData)}</ThreeByTwoGrid>
         <Link to={path}>
           <ViewMoreBtn>view more</ViewMoreBtn>
         </Link>
 
         {this.state.imgModalClicked && (
-          <ImgModal 
+          <ImgModal
+          imgId={this.state.imgId}
+          projectData={projectData}
           closeBtn={this.handleOverlayClose} 
           escKeyDown={this.handlEscKeyDown}
           />

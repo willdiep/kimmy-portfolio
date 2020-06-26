@@ -14,29 +14,25 @@ const ProjectTypeHeader = styled.h2`
 
 class Gallery extends Component {
   render() {
+    // console.log('gallery')
     return (
       <>
         <ProjectTypeHeader>residential</ProjectTypeHeader>
 
         <Project
-          title={data.apartmentAweData.title}
-          project={data.apartmentAweData}
-          category={data.apartmentAweData.category}
-          urlPath={data.apartmentAweData.urlPath}
+          projectData={data.apartmentAweData}
         />
 
 
 
-        {/* <LazyLoad height={200} offset={100} once >
+       <LazyLoad height={200} offset={100} once >
           <Project
-            title='Sunrise City Apartment'
-            project={data.sunriseCityApartmentData}
-            category='residential'
-            urlPath='sunrise-city-apartment'
-            // type={data.sunriseCityApartmentData[0].type}
+            projectData={data.sunriseCityApartmentData}
           />
         </LazyLoad>
-        <LazyLoad height={200} offset={100} once >
+
+
+         {/* <LazyLoad height={200} offset={100} once >
           <Project
             title='Topaz Caolo Apartment'
             project={data.topazCaoloApartmentData}

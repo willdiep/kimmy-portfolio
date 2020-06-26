@@ -48,9 +48,11 @@ const ProjectDetails = (props) => {
   const pathId = props.match.params.id.toLowerCase().split('-').join('')
   // console.log(pathId)
 
+  // console.log(props.data) // apartmentAweData: {}
   let projectDataArray
   // console.log(projectDataArray)
-  // console.log(props.data) // apartmentAweData: {}
+
+  let description
 
   for (let key in props.data) {
     // console.log(key) // apartmentAweData
@@ -59,8 +61,10 @@ const ProjectDetails = (props) => {
     if (pathId === dataId) {
       // console.log(props.data[key].imgCollection)
       projectDataArray = props.data[key].imgCollection
+      description = props.data[key].description
     }
   }
+
 
   const heading = props.match.params.id
     .replace(/-/g, ' ')
@@ -84,7 +88,7 @@ const ProjectDetails = (props) => {
           <br></br>
 
             <DescriptionText>
-              {props.data.apartmentAweData.description}
+              {description}
             </DescriptionText>
           </div>
         </DetailSection>

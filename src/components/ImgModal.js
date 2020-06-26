@@ -11,6 +11,10 @@ const Container = styled.article`
   width: 100%;
 `
 
+const Img = styled.img`
+  width: 800px;
+`
+
 class ImgModal extends Component {
   componentDidMount() {
     window.addEventListener('keydown', (e) => {
@@ -21,15 +25,24 @@ class ImgModal extends Component {
     })
   }
 
-
-
   render() {
+    const { imgId, projectData } = this.props
+
+    // console.log(imgId)
+    const clickedImgObj = projectData.imgCollection.find( item => item.id === imgId)
+
+    const clickedImg = clickedImgObj.img
+
+
+
+
     return (
       <Container>
-        ImgModal
-        <div onClick={() => this.props.closeBtn()}>
-          X
-        </div>
+
+        <div onClick={() => this.props.closeBtn()}>X</div>
+
+        <Img src={clickedImg} alt='' />
+
       </Container>
     )
   }

@@ -1,7 +1,8 @@
 // RESIDENTIAL
 export const apartmentAweData = {
   title: 'Apartment Awe',
-  description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
   category: 'residential',
   urlPath: 'apartment-awe',
   imgCollection: [
@@ -32,68 +33,75 @@ export const apartmentAweData = {
   ],
 }
 
-// export const sunriseCityApartmentData = [
-//   {
-//     id: 1,
-//     img: '/assets/images/residential/sunrise-city-apartment/01.jpeg',
-//   },
-//   {
-//     id: 2,
-//     img: '/assets/images/residential/sunrise-city-apartment/02.jpeg',
-//   },
-//   {
-//     id: 3,
-//     img: '/assets/images/residential/sunrise-city-apartment/03.jpeg',
-//   },
-//   {
-//     id: 4,
-//     img: '/assets/images/residential/sunrise-city-apartment/04.jpeg',
-//   },
-//   {
-//     id: 5,
-//     img: '/assets/images/residential/sunrise-city-apartment/05.jpeg',
-//   },
-//   {
-//     id: 6,
-//     img: '/assets/images/residential/sunrise-city-apartment/06.jpeg',
-//   },
-//   {
-//     id: 7,
-//     img: '/assets/images/residential/sunrise-city-apartment/07.jpeg',
-//   },
-//   {
-//     id: 8,
-//     img: '/assets/images/residential/sunrise-city-apartment/08.jpeg',
-//   },
-//   {
-//     id: 8,
-//     img: '/assets/images/residential/sunrise-city-apartment/08.jpeg',
-//   },
-//   {
-//     id: 10,
-//     img: '/assets/images/residential/sunrise-city-apartment/10.jpeg',
-//   },
-//   {
-//     id: 11,
-//     img: '/assets/images/residential/sunrise-city-apartment/11.jpeg',
-//   },
-//   {
-//     id: 12,
-//     img: '/assets/images/residential/sunrise-city-apartment/12.jpeg',
-//   },
-//   {
-//     id: 13,
-//     img: '/assets/images/residential/sunrise-city-apartment/13.jpeg',
-//   },
-//   {
-//     id: 14,
-//     img: '/assets/images/residential/sunrise-city-apartment/14.jpeg',
-//   },
-//   {
-//     id: 15,
-//     img: '/assets/images/residential/sunrise-city-apartment/15.jpeg',
-//   },
-// ]
+export const sunriseCityApartmentData = {
+  title: 'Sunrise City Apartment',
+  description:
+    'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+  category: 'residential',
+  urlPath: 'sunrise-city-apartment',
+  imgCollection: [
+    {
+      id: 1,
+      img: '/assets/images/residential/sunrise-city-apartment/01.jpeg',
+    },
+    {
+      id: 2,
+      img: '/assets/images/residential/sunrise-city-apartment/02.jpeg',
+    },
+    {
+      id: 3,
+      img: '/assets/images/residential/sunrise-city-apartment/03.jpeg',
+    },
+    {
+      id: 4,
+      img: '/assets/images/residential/sunrise-city-apartment/04.jpeg',
+    },
+    {
+      id: 5,
+      img: '/assets/images/residential/sunrise-city-apartment/05.jpeg',
+    },
+    {
+      id: 6,
+      img: '/assets/images/residential/sunrise-city-apartment/06.jpeg',
+    },
+    {
+      id: 7,
+      img: '/assets/images/residential/sunrise-city-apartment/07.jpeg',
+    },
+    {
+      id: 8,
+      img: '/assets/images/residential/sunrise-city-apartment/08.jpeg',
+    },
+    {
+      id: 8,
+      img: '/assets/images/residential/sunrise-city-apartment/08.jpeg',
+    },
+    {
+      id: 10,
+      img: '/assets/images/residential/sunrise-city-apartment/10.jpeg',
+    },
+    {
+      id: 11,
+      img: '/assets/images/residential/sunrise-city-apartment/11.jpeg',
+    },
+    {
+      id: 12,
+      img: '/assets/images/residential/sunrise-city-apartment/12.jpeg',
+    },
+    {
+      id: 13,
+      img: '/assets/images/residential/sunrise-city-apartment/13.jpeg',
+    },
+    {
+      id: 14,
+      img: '/assets/images/residential/sunrise-city-apartment/14.jpeg',
+    },
+    {
+      id: 15,
+      img: '/assets/images/residential/sunrise-city-apartment/15.jpeg',
+    },
+  ],
+}
 
 // export const topazCaoloApartmentData = [
 //   {

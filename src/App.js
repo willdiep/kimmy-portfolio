@@ -21,6 +21,7 @@ export const Layout = styled.main`
 `
 
 function App() {
+  // console.log('app')
   return (
     <>
       <GlobalStyle />
@@ -37,10 +38,6 @@ function App() {
               <Route path='/commercial/:id'>
                 <ProjectDetails data={data} />
               </Route>
-
-              {/* <Route path='/about'>
-                <About />
-              </Route> */}
 
               <Route path='/'>
                 <Home /> {/* Links to <Gallery /> */}
