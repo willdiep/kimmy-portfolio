@@ -42,7 +42,7 @@ class Navbar extends Component {
     return (
       <Nav>
         <LeftNav>
-          <Link to='/'>Kimmy</Link>
+          <Link to='/'>KIMMY INTERIOR DESIGNER</Link>
         </LeftNav>
 
         <RightNav>

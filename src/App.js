@@ -16,7 +16,7 @@ import './assets/fonts/Josefin_Sans/static/JosefinSans-Thin.ttf'
 
 
 export const Layout = styled.main`
-  background-color: lightblue;
+  /* background-color: lightblue; */
   margin: 0 3rem;
 `
 

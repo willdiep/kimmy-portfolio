@@ -1,15 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-
-const Figure = styled.figure`
-  background-color: yellow;
-  display: flex;
-`
-
-const Img = styled.img`
-  width: 100%;
-`
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 
 const ThreeByTwoGrid = styled.article`
   display: grid;
@@ -23,9 +16,49 @@ const ProjectHeader = styled.h3`
   padding: 1rem 0;
 `
 
+const Img = styled.img`
+  display: block;
+  width: 100%;
+  height: auto;
+`
+
+const OverlayContainer = styled.div`
+  position: absolute;
+  /* top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; */
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+// const OverlaySymbolContainer = styled.div`
+//   background-color: white;
+// `
+
+const Figure = styled.figure`
+  /* background-color: yellow; */
+  display: flex;
+  position: relative;
+
+  ${OverlayContainer}:hover {
+    opacity: 1;
+    /* opacity: 0.5; */
+    /* background-color: red; */
+    z-index: 1;
+  }
+`
+
+const AnchorModal = styled.a``
+
 const ViewMoreBtn = styled.button`
   text-transform: uppercase;
-
   /*  transition: all 0.2s; */
 `
 
@@ -34,14 +67,18 @@ export const generateSixImgs = (data) => {
     return (
       <Figure>
         <Img src={item.img} alt='' />
+        <OverlayContainer>
+          {/* <OverlaySymbolContainer> */}
+          <FontAwesomeIcon icon={faSearchPlus} color='white' size='3x' />
+          {/* </OverlaySymbolContainer> */}
+        </OverlayContainer>
       </Figure>
     )
   })
   return mapSixImgs
 }
 
-export const Project = ({ title, project, category, id}) => {
-
+export const Project = ({ title, project, category, id }) => {
   let path = ''
   if (category === 'residential') {
     path = `/residential/${id}`
