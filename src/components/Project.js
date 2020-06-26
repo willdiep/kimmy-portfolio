@@ -1,11 +1,12 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-
-// import ImgModal from './ImgModal'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
+import ImgModal from './ImgModal'
+
+const Container = styled.article`
+`
 
 const ThreeByTwoGrid = styled.article`
   display: grid;
@@ -27,10 +28,6 @@ const Img = styled.img`
 
 const OverlayContainer = styled.div`
   position: absolute;
-  /* top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0; */
   height: 100%;
   width: 100%;
   opacity: 0;
@@ -54,48 +51,72 @@ const Figure = styled.figure`
   }
 `
 
-// const AnchorModal = styled.a``
-
 const ViewMoreBtn = styled.button`
   text-transform: uppercase;
   /*  transition: all 0.2s; */
 `
 
-const generateSixImgs = (data) => {
-  
-  const mapSixImgs = data.slice(0, 6).map((item) => {
-
-    const overlayClick = () => {
-      console.log('clicked')
-    }
-    
-    return (
-      <Figure>
-        <Img src={item.img} alt='' />
-        <OverlayContainer onClick={() => overlayClick()}>
-          <FontAwesomeIcon icon={faSearchPlus} color='white' size='3x' />
-        </OverlayContainer>
-      </Figure>
-    )
-  })
-  return mapSixImgs
-}
-
-export const Project = ({ title, project, category, id }) => {
-  let path = ''
-  if (category === 'residential') {
-    path = `/residential/${id}`
-  } else if (category === 'commercial') {
-    path = `/commercial/${id}`
+export class Project extends Component {
+  state = {
+    imgModalClicked: false,
   }
 
-  return (
-    <>
-      <ProjectHeader>{title}</ProjectHeader>
-      <ThreeByTwoGrid>{generateSixImgs(project)}</ThreeByTwoGrid>
-      <Link to={path}>
-        <ViewMoreBtn>view more</ViewMoreBtn>
-      </Link>
-    </>
-  )
+  hanndleOverlayClick = () => {
+    this.setState(
+      {
+        imgModalClicked: true,
+      },
+      console.log('img clicked')
+    )
+  }
+
+  handleOverlayClose = () => {
+    this.setState(
+      {
+        imgModalClicked: false
+      },
+      console.log('X clicked')
+    )
+  }
+
+  generateSixImgs = (data) => {
+    const mapSixImgs = data.slice(0, 6).map((item) => {
+      return (
+        <Figure>
+          <Img src={item.img} alt='' />
+          <OverlayContainer onClick={() => this.hanndleOverlayClick()}>
+            <FontAwesomeIcon icon={faSearchPlus} color='white' size='3x' />
+          </OverlayContainer>
+        </Figure>
+      )
+    })
+    return mapSixImgs
+  }
+
+  render() {
+    const { title, project, category, urlPath } = this.props
+
+    console.log(urlPath)
+
+    let path = ''
+    if (category === 'residential') {
+      path = `/residential/${urlPath}`
+    } else if (category === 'commercial') {
+      path = `/commercial/${urlPath}`
+    }
+
+    return (
+      <Container>
+        <ProjectHeader>{title}</ProjectHeader>
+        <ThreeByTwoGrid>{this.generateSixImgs(project)}</ThreeByTwoGrid>
+        <Link to={path}>
+          <ViewMoreBtn>view more</ViewMoreBtn>
+        </Link>
+
+        {this.state.imgModalClicked && (
+          <ImgModal closeBtn={this.handleOverlayClose} />
+        )}
+      </Container>
+    )
+  }
 }

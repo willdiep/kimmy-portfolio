@@ -22,7 +22,7 @@ class Gallery extends Component {
           title='Apartment Awe'
           project={data.apartmentAweData}
           category='residential'
-          id='apartment-awe'
+          urlPath='apartment-awe'
           type={data.apartmentAweData[0].type}
         />
 
@@ -33,7 +33,7 @@ class Gallery extends Component {
             title='Sunrise City Apartment'
             project={data.sunriseCityApartmentData}
             category='residential'
-            id='sunrise-city-apartment'
+            urlPath='sunrise-city-apartment'
             type={data.sunriseCityApartmentData[0].type}
           />
         </LazyLoad>
@@ -42,7 +42,7 @@ class Gallery extends Component {
             title='Topaz Caolo Apartment'
             project={data.topazCaoloApartmentData}
             category='residential'
-            id='topaz-caolo-apartment'
+            urlPath='topaz-caolo-apartment'
             type={data.topazCaoloApartmentData[0].type}
           />
         </LazyLoad>
@@ -51,7 +51,7 @@ class Gallery extends Component {
             title='Apartment Kitchen Remodel'
             project={data.apartmentKitchenRemodelData}
             category='residential'
-            id='apartment-kitchen-remodel'
+            urlPath='apartment-kitchen-remodel'
             type={data.apartmentKitchenRemodelData[0].type}
           />
         </LazyLoad>
@@ -64,7 +64,7 @@ class Gallery extends Component {
             title='Sweet Delights Cafe'
             project={data.sweetDelightsCafeData}
             category='commercial'
-            id='sweet-delights-cafe'
+            urlPath='sweet-delights-cafe'
             type={data.sweetDelightsCafeData[0].type}
           />
         </LazyLoad>
@@ -73,7 +73,7 @@ class Gallery extends Component {
             title='Golden Hour Cafe'
             project={data.goldenHourCafeData}
             category='commercial'
-            id='golden-hour-cafe'
+            urlPath='golden-hour-cafe'
             type={data.goldenHourCafeData[0].type}
           />
         </LazyLoad>
@@ -83,7 +83,7 @@ class Gallery extends Component {
             title='Serenity Dental'
             project={data.serenityDentalData}
             category='commercial'
-            id='serenity-dental'
+            urlPath='serenity-dental'
             type={data.serenityDentalData[0].type}
           />
         </LazyLoad>
