@@ -61,6 +61,7 @@ export class Project extends Component {
     imgModalClicked: false,
   }
 
+
   hanndleOverlayClick = () => {
     this.setState(
       {
@@ -79,12 +80,22 @@ export class Project extends Component {
     )
   }
 
+  handlEscKeyDown = () => {
+    this.setState(
+      {
+        imgModalClicked: false
+      },
+      console.log('escape key down')
+    )
+  }
+
   generateSixImgs = (data) => {
     const mapSixImgs = data.imgCollection.slice(0, 6).map((item) => {
       return (
         <Figure>
           <Img src={item.img} alt='' />
-          <OverlayContainer onClick={() => this.hanndleOverlayClick()}>
+          <OverlayContainer
+          onClick={() => this.hanndleOverlayClick()}>
             <FontAwesomeIcon icon={faSearchPlus} color='white' size='3x' />
           </OverlayContainer>
         </Figure>
@@ -93,10 +104,11 @@ export class Project extends Component {
     return mapSixImgs
   }
 
+
   render() {
     const { title, project, category, urlPath } = this.props
 
-    console.log(urlPath)
+    // console.log(urlPath)
 
     let path = ''
     if (category === 'residential') {
@@ -114,7 +126,10 @@ export class Project extends Component {
         </Link>
 
         {this.state.imgModalClicked && (
-          <ImgModal closeBtn={this.handleOverlayClose} />
+          <ImgModal 
+          closeBtn={this.handleOverlayClose} 
+          escKeyDown={this.handlEscKeyDown}
+          />
         )}
       </Container>
     )

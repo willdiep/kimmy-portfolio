@@ -1,9 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
 
-
-
-
 const Container = styled.article`
   background-color: orange;
   z-index: 100;
@@ -15,14 +12,24 @@ const Container = styled.article`
 `
 
 class ImgModal extends Component {
-    
-    render() {
+  componentDidMount() {
+    window.addEventListener('keydown', (e) => {
+      // console.log(e.keyCode)
+      if (e.keyCode === 27) {
+        this.props.escKeyDown()
+      }
+    })
+  }
 
+
+
+  render() {
     return (
       <Container>
-        
-      ImgModal
-      <div onClick={() => this.props.closeBtn()}>X</div>
+        ImgModal
+        <div onClick={() => this.props.closeBtn()}>
+          X
+        </div>
       </Container>
     )
   }
