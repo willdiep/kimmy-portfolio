@@ -8,7 +8,7 @@ const ProjectTypeHeader = styled.h2`
   text-transform: uppercase;
   text-align: center;
   padding: 3rem 0;
-  background-color: lightgoldenrodyellow;
+  /* background-color: lightgoldenrodyellow; */
   padding-top: ${props => (props.commercial && '7rem' )};
 `
 
@@ -19,22 +19,21 @@ class Gallery extends Component {
         <ProjectTypeHeader>residential</ProjectTypeHeader>
 
         <Project
-          title='Apartment Awe'
+          title={data.apartmentAweData.title}
           project={data.apartmentAweData}
-          category='residential'
-          urlPath='apartment-awe'
-          type={data.apartmentAweData[0].type}
+          category={data.apartmentAweData.category}
+          urlPath={data.apartmentAweData.urlPath}
         />
 
-        {/* <Project title='Ruthven Townhouse' project={data.ruthvenTownhouseData} /> */}
 
-        <LazyLoad height={200} offset={100} once >
+
+        {/* <LazyLoad height={200} offset={100} once >
           <Project
             title='Sunrise City Apartment'
             project={data.sunriseCityApartmentData}
             category='residential'
             urlPath='sunrise-city-apartment'
-            type={data.sunriseCityApartmentData[0].type}
+            // type={data.sunriseCityApartmentData[0].type}
           />
         </LazyLoad>
         <LazyLoad height={200} offset={100} once >
@@ -43,7 +42,7 @@ class Gallery extends Component {
             project={data.topazCaoloApartmentData}
             category='residential'
             urlPath='topaz-caolo-apartment'
-            type={data.topazCaoloApartmentData[0].type}
+            // type={data.topazCaoloApartmentData[0].type}
           />
         </LazyLoad>
         <LazyLoad height={200} offset={100} once >
@@ -52,7 +51,7 @@ class Gallery extends Component {
             project={data.apartmentKitchenRemodelData}
             category='residential'
             urlPath='apartment-kitchen-remodel'
-            type={data.apartmentKitchenRemodelData[0].type}
+            // type={data.apartmentKitchenRemodelData[0].type}
           />
         </LazyLoad>
 
@@ -65,7 +64,7 @@ class Gallery extends Component {
             project={data.sweetDelightsCafeData}
             category='commercial'
             urlPath='sweet-delights-cafe'
-            type={data.sweetDelightsCafeData[0].type}
+            // type={data.sweetDelightsCafeData[0].type}
           />
         </LazyLoad>
         <LazyLoad height={200} offset={100} once >
@@ -74,7 +73,7 @@ class Gallery extends Component {
             project={data.goldenHourCafeData}
             category='commercial'
             urlPath='golden-hour-cafe'
-            type={data.goldenHourCafeData[0].type}
+            // type={data.goldenHourCafeData[0].type}
           />
         </LazyLoad>
 
@@ -84,9 +83,9 @@ class Gallery extends Component {
             project={data.serenityDentalData}
             category='commercial'
             urlPath='serenity-dental'
-            type={data.serenityDentalData[0].type}
+            // type={data.serenityDentalData[0].type}
           />
-        </LazyLoad>
+        </LazyLoad> */}
       </>
     )
   }

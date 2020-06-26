@@ -3,7 +3,7 @@ import { withRouter } from 'react-router'
 import styled from 'styled-components'
 
 const Container = styled.article`
-  background-color: lightskyblue;
+  /* background-color: lightskyblue; */
   /* margin: 0 1rem; */
   display: grid;
   grid-template-columns: 70% 30%;
@@ -17,12 +17,12 @@ const Container = styled.article`
 `
 
 const ImgSection = styled.section`
-  background-color: green;
+  /* background-color: green; */
   grid-area: main;
 `
 
 const DetailSection = styled.aside`
-  background-color: lightpink;
+  /* background-color: lightpink; */
   margin: 2rem 3rem;
   grid-area: sidebar;
 
@@ -36,37 +36,37 @@ const Img = styled.img`
   width: 100%;
 `
 
+const DescriptionText = styled.p`
+  margin-right: 6rem;
+`
+
 const ProjectDetails = (props) => {
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
 
   const pathId = props.match.params.id.toLowerCase().split('-').join('')
+  // console.log(pathId)
 
   let projectDataArray
+  // console.log(projectDataArray)
+  // console.log(props.data) // apartmentAweData: {}
 
   for (let key in props.data) {
+    // console.log(key) // apartmentAweData
     const dataId = key.toLowerCase().replace('data', '')
+    // console.log(dataId) // apartmentawe
     if (pathId === dataId) {
-      projectDataArray = props.data[key]
+      // console.log(props.data[key].imgCollection)
+      projectDataArray = props.data[key].imgCollection
     }
   }
 
   const heading = props.match.params.id
     .replace(/-/g, ' ')
     .split(' ')
-    .map((word) => word[0].toUpperCase() + word.slice(1, word.length))
+    .map((word) => word.toUpperCase())
     .join(' ')
-
-  // console.log(projectDataArray)
-
-  // const dataType = projectDataArray[0].type
-  // let type
-  // if (dataType === 'residential') {
-  //   type = 'residential'
-  // } else if (dataType === 'commercial') {
-  //   type = 'commercial'
-  // }
 
   return (
     <>
@@ -81,11 +81,11 @@ const ProjectDetails = (props) => {
           <div>
             <h2>{heading}</h2>
 
-            <p>2018 | Realizacja</p>
-            <p>
-              Współpraca: Dominika Zabłotna-Kowalska, Nina Struzik-Michalczewska
-            </p>
-            <p>Zdjęcia: Julia Michalczewska</p>
+          <br></br>
+
+            <DescriptionText>
+              {props.data.apartmentAweData.description}
+            </DescriptionText>
           </div>
         </DetailSection>
       </Container>

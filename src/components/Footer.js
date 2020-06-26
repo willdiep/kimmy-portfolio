@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const Footer = () => {
   const FooterStyle = styled.footer`
-    background-color: orange;
+    /* background-color: orange; */
     margin: 0 3rem;
     /* padding: 0 3rem; */
     height: 50px;

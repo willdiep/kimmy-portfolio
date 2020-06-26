@@ -15,7 +15,7 @@ const ThreeByTwoGrid = styled.article`
 `
 
 const ProjectHeader = styled.h3`
-  background-color: red;
+  /* background-color: red; */
   text-transform: uppercase;
   padding: 1rem 0;
 `
@@ -80,7 +80,7 @@ export class Project extends Component {
   }
 
   generateSixImgs = (data) => {
-    const mapSixImgs = data.slice(0, 6).map((item) => {
+    const mapSixImgs = data.imgCollection.slice(0, 6).map((item) => {
       return (
         <Figure>
           <Img src={item.img} alt='' />
