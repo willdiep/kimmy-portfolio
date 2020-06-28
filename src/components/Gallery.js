@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+// import { Link } from 'react-router-dom'
+
 // import LazyLoad from 'react-lazyload'
 import styled from 'styled-components'
 import { Project } from './Project'
@@ -9,68 +11,47 @@ const ProjectTypeHeader = styled.h2`
   text-align: center;
   padding: 1rem 0;
   /* background-color: orange; */
-  margin-top: ${props => (props.commercial && '5rem' )};
+  margin-top: ${(props) => props.commercial && '5rem'};
 `
 
-console.log('gallery component')
+// console.log('gallery component')
 
 class Gallery extends Component {
-
-
   render() {
-    console.log('render gallery')
+    // console.log('render gallery')
     return (
       <>
-        <ProjectTypeHeader>residential</ProjectTypeHeader>
+        <a href='#residential'>
+          <ProjectTypeHeader>residential</ProjectTypeHeader>
+        </a>
 
-        <Project
-          projectData={data.apartmentAweData}
-        />
+        <Project projectData={data.apartmentAweData} />
 
-
-
-       {/* <LazyLoad height={200} offset={100} once > */}
-          <Project
-            projectData={data.sunriseCityApartmentData}
-          />
+        {/* <LazyLoad height={200} offset={100} once > */}
+        <Project projectData={data.sunriseCityApartmentData} />
         {/* </LazyLoad> */}
 
-
-         {/* <LazyLoad height={200} offset={100} once > */}
-          <Project
-            projectData={data.topazCaoloApartmentData}
-          />
+        {/* <LazyLoad height={200} offset={100} once > */}
+        <Project projectData={data.topazCaoloApartmentData} />
         {/* </LazyLoad> */}
 
-
-       {/* <LazyLoad height={200} offset={100} once > */}
-          <Project
-            projectData={data.apartmentKitchenRemodelData}
-          />
+        {/* <LazyLoad height={200} offset={100} once > */}
+        <Project projectData={data.apartmentKitchenRemodelData} />
         {/* </LazyLoad> */}
-
 
         <ProjectTypeHeader commercial>commercial</ProjectTypeHeader>
 
         {/* <LazyLoad height={200} offset={100} once > */}
-          <Project
-            projectData={data.sweetDelightsCafeData}
-          />
-        {/* </LazyLoad> */}
-
-
-        {/* <LazyLoad height={200} offset={100} once > */}
-          <Project
-            projectData={data.goldenHourCafeData}
-          />
+        <Project projectData={data.sweetDelightsCafeData} />
         {/* </LazyLoad> */}
 
         {/* <LazyLoad height={200} offset={100} once > */}
-          <Project
-            projectData={data.serenityDentalData}
-          />
+        <Project projectData={data.goldenHourCafeData} />
         {/* </LazyLoad> */}
 
+        {/* <LazyLoad height={200} offset={100} once > */}
+        <Project projectData={data.serenityDentalData} />
+        {/* </LazyLoad> */}
       </>
     )
   }

@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faAngleLeft } from '@fortawesome/free-solid-svg-icons'
+import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 const Container = styled.article`
   background-color: var(--body-color);
@@ -20,9 +23,13 @@ const Topbar = styled.section`
 
 const ImgContainer = styled.section`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  align-items: center;
   height: 90%;
 
+  .fa-icon:hover {
+    color: darkgray;
+  }
 `
 
 const Img = styled.img`
@@ -77,6 +84,29 @@ class ImgModal extends Component {
     }
   }
 
+  handleClickArrowLeft = () => {
+    const { cursor } = this.state
+
+    if (cursor > 1) {
+      this.setState((prevState) => ({
+        cursor: prevState.cursor - 1,
+      }))
+    }
+  }
+
+  handleClickArrowRight = () => {
+    const { cursor, imgCollection } = this.state
+
+    if (cursor < imgCollection.length) {
+      this.setState(
+        (prevState) => ({
+          cursor: prevState.cursor + 1,
+        })
+        // console.log('next, this.state.cursor: ', this.state.cursor)
+      )
+    }
+  }
+
   render() {
     const { projectData } = this.props
 
@@ -111,10 +141,22 @@ class ImgModal extends Component {
           <div onClick={() => this.props.closeBtn()}>X</div>
         </Topbar>
 
-<br></br>
+        <br></br>
 
         <ImgContainer>
+          <FontAwesomeIcon
+            className='fa-icon'
+            icon={faAngleLeft}
+            size='4x'
+            onClick={() => this.handleClickArrowLeft()}
+          />
           <Img src={renderImg} alt='' />
+          <FontAwesomeIcon
+            className='fa-icon'
+            icon={faAngleRight}
+            size='4x'
+            onClick={() => this.handleClickArrowRight()}
+          />
         </ImgContainer>
       </Container>
     )

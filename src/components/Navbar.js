@@ -47,7 +47,7 @@ class Navbar extends Component {
 
         <RightNav>
           <div>
-            <Link to='/not-set'>Residential</Link>
+            <Link to='/#residential'>Residential</Link>
           </div>
           <div>
             <Link to='/not-set'>Commercial</Link>
