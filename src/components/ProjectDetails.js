@@ -1,6 +1,9 @@
-import React, { useEffect } from 'react'
+import React, { Component } from 'react'
 import { withRouter } from 'react-router'
 import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
+import ImgModal from './ImgModal'
 
 const Container = styled.article`
   /* background-color: lightskyblue; */
@@ -40,64 +43,150 @@ const DescriptionText = styled.p`
   margin-right: 6rem;
 `
 
-const ProjectDetails = (props) => {
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [])
+const OverlayContainer = styled.div`
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
 
-  const pathId = props.match.params.id.toLowerCase().split('-').join('')
-  // console.log(pathId)
+const Figure = styled.figure`
+  /* background-color: yellow; */
+  display: flex;
+  position: relative;
 
-  // console.log(props.data) // apartmentAweData: {}
-  let projectDataArray
+  ${OverlayContainer}:hover {
+    opacity: 1;
+    /* opacity: 0.5; */
+    /* background-color: red; */
+    z-index: 1;
+  }
+`
 
-  let description
-
-  for (let key in props.data) {
-    // console.log(key) // apartmentAweData
-    const dataId = key.toLowerCase().replace('data', '')
-    // console.log(dataId) // apartmentawe
-    if (pathId === dataId) {
-      // console.log(props.data[key].imgCollection)
-      projectDataArray = props.data[key].imgCollection
-  // console.log(projectDataArray)
-
-      description = props.data[key].description
-    }
+class ProjectDetails extends Component {
+  state = {
+    imgModalClicked: false,
+    imgId: 0,
   }
 
-  console.log(projectDataArray)
+  componentDidMount() {
+    window.scrollTo(0, 0)
+  }
 
+  hanndleOverlayClick = () => {
+    this.setState(
+      {
+        imgModalClicked: true,
+      }
+      // console.log('img clicked')
+    )
+  }
 
-  const heading = props.match.params.id
-    .replace(/-/g, ' ')
-    .split(' ')
-    .map((word) => word.toUpperCase())
-    .join(' ')
+  handleOverlayClose = () => {
+    this.setState(
+      {
+        imgModalClicked: false,
+      }
+      // console.log('X clicked')
+    )
+  }
 
-  return (
-    <>
-      <Container>
-        <ImgSection>
-          {projectDataArray.map((item) => {
-            return <Img src={item.img} alt='' />
-          })}
-        </ImgSection>
+  handlEscKeyDown = () => {
+    this.setState(
+      {
+        imgModalClicked: false,
+      }
+      // console.log('escape key down')
+    )
+  }
 
-        <DetailSection>
-          <div>
-            <h2>{heading}</h2>
+  handleImgId = (id) => {
+    // console.log(id)
+    this.setState({
+      imgId: id,
+    })
+  }
 
-          <br></br>
+  render() {
+    const pathId = this.props.match.params.id.toLowerCase().split('-').join('')
+    // console.log(pathId)
 
-            <DescriptionText>
-              {description}
-            </DescriptionText>
-          </div>
-        </DetailSection>
-      </Container>
-    </>
-  )
+    // console.log(this.props.data) // apartmentAweData: {}
+    let projectDataArray = []
+
+    let description = ''
+
+    let projectData = []
+
+    for (let key in this.props.data) {
+      // console.log(key) // apartmentAweData
+      const dataId = key.toLowerCase().replace('data', '')
+      // console.log(dataId) // apartmentawe
+      if (pathId === dataId) {
+        // console.log(this.props.data[key].imgCollection)
+        projectDataArray = this.props.data[key].imgCollection
+        projectData = this.props.data[key]
+        // console.log(projectDataArray)
+
+        description = this.props.data[key].description
+      }
+    }
+
+    console.log(projectData)
+
+    const heading = this.props.match.params.id
+      .replace(/-/g, ' ')
+      .split(' ')
+      .map((word) => word.toUpperCase())
+      .join(' ')
+
+    return (
+      <>
+        <Container>
+          <ImgSection>
+            {projectDataArray.map((item) => {
+              return (
+                <Figure onClick={() => this.handleImgId(item.id)}>
+                  <Img src={item.img} alt='' />
+                  <OverlayContainer onClick={() => this.hanndleOverlayClick()}>
+                    <FontAwesomeIcon
+                      icon={faSearchPlus}
+                      color='white'
+                      size='3x'
+                    />
+                  </OverlayContainer>
+                </Figure>
+              )
+            })}
+          </ImgSection>
+
+          <DetailSection>
+            <div>
+              <h2>{heading}</h2>
+
+              <br></br>
+
+              <DescriptionText>{description}</DescriptionText>
+            </div>
+          </DetailSection>
+
+          {this.state.imgModalClicked && (
+            <ImgModal
+              imgId={this.state.imgId}
+              projectData={projectData}
+              closeBtn={this.handleOverlayClose}
+              escKeyDown={this.handlEscKeyDown}
+            />
+          )}
+        </Container>
+      </>
+    )
+  }
 }
 
 export default withRouter(ProjectDetails)
