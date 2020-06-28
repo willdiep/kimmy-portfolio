@@ -2,47 +2,120 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 
 const Container = styled.article`
-  background-color: orange;
+  background-color: var(--body-color);
   z-index: 100;
   position: fixed;
   left: 0;
   top: 0;
   height: 100%;
   width: 100%;
+  padding: 2rem 3rem;
+`
+
+const Topbar = styled.section`
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.5rem;
+`
+
+const ImgContainer = styled.section`
+  display: flex;
+  justify-content: center;
+  height: 90%;
+
 `
 
 const Img = styled.img`
-  width: 800px;
+  /* width: 800px; */
+  height: 100%;
 `
 
 class ImgModal extends Component {
+  state = {
+    cursor: 0,
+    imgCollection: [],
+  }
+
   componentDidMount() {
+    const { imgId, projectData } = this.props
+
     window.addEventListener('keydown', (e) => {
       // console.log(e.keyCode)
       if (e.keyCode === 27) {
         this.props.escKeyDown()
       }
+
+      this.handleImgNavigate(e)
     })
+
+    this.setState(
+      {
+        cursor: imgId,
+        imgCollection: projectData.imgCollection,
+      }
+      // console.log('current state cursor: ', this.state.cursor)
+    )
+  }
+
+  handleImgNavigate = (e) => {
+    const { cursor, imgCollection } = this.state
+    // arrow right/left button should select next/previous list element
+    if (e.keyCode === 37 && cursor > 1) {
+      this.setState(
+        (prevState) => ({
+          cursor: prevState.cursor - 1,
+        })
+        // console.log('prev, this.state.cursor: ', this.state.cursor)
+      )
+    } else if (e.keyCode === 39 && cursor < imgCollection.length) {
+      this.setState(
+        (prevState) => ({
+          cursor: prevState.cursor + 1,
+        })
+        // console.log('next, this.state.cursor: ', this.state.cursor)
+      )
+    }
   }
 
   render() {
-    const { imgId, projectData } = this.props
+    const { projectData } = this.props
 
-    // console.log(imgId)
-    const clickedImgObj = projectData.imgCollection.find( item => item.id === imgId)
+    const clickedImgObj = projectData.imgCollection.find(
+      (item) => item.id === this.state.cursor
+    )
 
-    const clickedImg = clickedImgObj.img
+    let renderImg
+    let renderId
 
+    // INITIAL RENDER OF 0
+    // if (this.state.cursor > 0) {
+    //   console.log(this.state.cursor)
 
+    // }
 
+    // INITIAL RENDER OF 'UNDEFINED'
+    if (clickedImgObj) {
+      // console.log(clickedImgObj)
+      renderId = clickedImgObj.id
+      renderImg = clickedImgObj.img
+    }
+
+    // console.log('imgModal')
 
     return (
       <Container>
+        <Topbar>
+          <div>
+            {renderId} / {this.state.imgCollection.length}
+          </div>
+          <div onClick={() => this.props.closeBtn()}>X</div>
+        </Topbar>
 
-        <div onClick={() => this.props.closeBtn()}>X</div>
+<br></br>
 
-        <Img src={clickedImg} alt='' />
-
+        <ImgContainer>
+          <Img src={renderImg} alt='' />
+        </ImgContainer>
       </Container>
     )
   }

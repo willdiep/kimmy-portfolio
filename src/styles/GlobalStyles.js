@@ -8,19 +8,24 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     --main-text-color: #5b5b5b;
-
+    --body-color: rgba(255,255,255,1)
   }
 
   body {
     /* opacity: 1;
     -webkit-transition: opacity .25s ease;
     transition: opacity .25s ease; */
-    background-color: rgba(255,255,255,1);
+    background-color: var(--body-color);
     color: var(--main-text-color);
     font-family: Josefin Sans, sans-serif;
   }
 
   a {
     color: var(--main-text-color);
+  }
+
+  a:hover {
+    color: var(--main-text-color);
+    text-decoration: none;
   }
 `

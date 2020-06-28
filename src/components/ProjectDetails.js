@@ -50,7 +50,6 @@ const ProjectDetails = (props) => {
 
   // console.log(props.data) // apartmentAweData: {}
   let projectDataArray
-  // console.log(projectDataArray)
 
   let description
 
@@ -61,9 +60,13 @@ const ProjectDetails = (props) => {
     if (pathId === dataId) {
       // console.log(props.data[key].imgCollection)
       projectDataArray = props.data[key].imgCollection
+  // console.log(projectDataArray)
+
       description = props.data[key].description
     }
   }
+
+  console.log(projectDataArray)
 
 
   const heading = props.match.params.id

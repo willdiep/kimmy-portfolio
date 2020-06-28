@@ -5,19 +5,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 import ImgModal from './ImgModal'
 
-const Container = styled.article`
-`
+const Container = styled.article``
 
 const ThreeByTwoGrid = styled.article`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-column-gap: 1rem;
+  margin-bottom: 1rem;
 `
 
 const ProjectHeader = styled.h3`
   /* background-color: red; */
   text-transform: uppercase;
-  padding: 1rem 0;
+  padding: 3rem 0 1rem 0;
+  /* margin-top: 2rem; */
 `
 
 const Img = styled.img`
@@ -51,23 +52,36 @@ const Figure = styled.figure`
   }
 `
 
-const ViewMoreBtn = styled.button`
+const ViewMoreBtnContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+const ViewMoreBtn = styled.div`
   text-transform: uppercase;
   /*  transition: all 0.2s; */
+  width: 9rem;
+  border: 2px var(--main-text-color) solid;
+  text-align: center;
+  padding: 0.75rem 0;
+
+  &:hover {
+    background-color: var(--main-text-color);
+    color: white;
+  }
 `
 
 export class Project extends Component {
   state = {
     imgModalClicked: false,
-    imgId: 0
+    imgId: 0,
   }
-
 
   hanndleOverlayClick = () => {
     this.setState(
       {
         imgModalClicked: true,
-      },
+      }
       // console.log('img clicked')
     )
   }
@@ -75,8 +89,8 @@ export class Project extends Component {
   handleOverlayClose = () => {
     this.setState(
       {
-        imgModalClicked: false
-      },
+        imgModalClicked: false,
+      }
       // console.log('X clicked')
     )
   }
@@ -84,8 +98,8 @@ export class Project extends Component {
   handlEscKeyDown = () => {
     this.setState(
       {
-        imgModalClicked: false
-      },
+        imgModalClicked: false,
+      }
       // console.log('escape key down')
     )
   }
@@ -93,7 +107,7 @@ export class Project extends Component {
   handleImgId = (id) => {
     // console.log(id)
     this.setState({
-      imgId: id
+      imgId: id,
     })
   }
 
@@ -103,8 +117,7 @@ export class Project extends Component {
       return (
         <Figure onClick={() => this.handleImgId(item.id)}>
           <Img key={item.id} src={item.img} alt='' />
-          <OverlayContainer
-          onClick={() => this.hanndleOverlayClick()}>
+          <OverlayContainer onClick={() => this.hanndleOverlayClick()}>
             <FontAwesomeIcon icon={faSearchPlus} color='white' size='3x' />
           </OverlayContainer>
         </Figure>
@@ -112,7 +125,6 @@ export class Project extends Component {
     })
     return mapSixImgs
   }
-
 
   render() {
     const { projectData } = this.props
@@ -130,16 +142,18 @@ export class Project extends Component {
       <Container>
         <ProjectHeader>{projectData.title}</ProjectHeader>
         <ThreeByTwoGrid>{this.generateSixImgs(projectData)}</ThreeByTwoGrid>
-        <Link to={path}>
-          <ViewMoreBtn>view more</ViewMoreBtn>
-        </Link>
+        <ViewMoreBtnContainer>
+          <Link to={path}>
+            <ViewMoreBtn>view more</ViewMoreBtn>
+          </Link>
+        </ViewMoreBtnContainer>
 
         {this.state.imgModalClicked && (
           <ImgModal
-          imgId={this.state.imgId}
-          projectData={projectData}
-          closeBtn={this.handleOverlayClose} 
-          escKeyDown={this.handlEscKeyDown}
+            imgId={this.state.imgId}
+            projectData={projectData}
+            closeBtn={this.handleOverlayClose}
+            escKeyDown={this.handlEscKeyDown}
           />
         )}
       </Container>

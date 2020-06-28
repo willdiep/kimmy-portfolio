@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import LazyLoad from 'react-lazyload'
+// import LazyLoad from 'react-lazyload'
 import styled from 'styled-components'
 import { Project } from './Project'
 import * as data from '../data'
@@ -7,14 +7,18 @@ import * as data from '../data'
 const ProjectTypeHeader = styled.h2`
   text-transform: uppercase;
   text-align: center;
-  padding: 3rem 0;
-  /* background-color: lightgoldenrodyellow; */
-  padding-top: ${props => (props.commercial && '7rem' )};
+  padding: 1rem 0;
+  /* background-color: orange; */
+  margin-top: ${props => (props.commercial && '5rem' )};
 `
 
+console.log('gallery component')
+
 class Gallery extends Component {
+
+
   render() {
-    // console.log('gallery')
+    console.log('render gallery')
     return (
       <>
         <ProjectTypeHeader>residential</ProjectTypeHeader>
@@ -25,63 +29,48 @@ class Gallery extends Component {
 
 
 
-       <LazyLoad height={200} offset={100} once >
+       {/* <LazyLoad height={200} offset={100} once > */}
           <Project
             projectData={data.sunriseCityApartmentData}
           />
-        </LazyLoad>
+        {/* </LazyLoad> */}
 
 
-         {/* <LazyLoad height={200} offset={100} once >
+         {/* <LazyLoad height={200} offset={100} once > */}
           <Project
-            title='Topaz Caolo Apartment'
-            project={data.topazCaoloApartmentData}
-            category='residential'
-            urlPath='topaz-caolo-apartment'
-            // type={data.topazCaoloApartmentData[0].type}
+            projectData={data.topazCaoloApartmentData}
           />
-        </LazyLoad>
-        <LazyLoad height={200} offset={100} once >
+        {/* </LazyLoad> */}
+
+
+       {/* <LazyLoad height={200} offset={100} once > */}
           <Project
-            title='Apartment Kitchen Remodel'
-            project={data.apartmentKitchenRemodelData}
-            category='residential'
-            urlPath='apartment-kitchen-remodel'
-            // type={data.apartmentKitchenRemodelData[0].type}
+            projectData={data.apartmentKitchenRemodelData}
           />
-        </LazyLoad>
+        {/* </LazyLoad> */}
 
 
         <ProjectTypeHeader commercial>commercial</ProjectTypeHeader>
 
-        <LazyLoad height={200} offset={100} once >
+        {/* <LazyLoad height={200} offset={100} once > */}
           <Project
-            title='Sweet Delights Cafe'
-            project={data.sweetDelightsCafeData}
-            category='commercial'
-            urlPath='sweet-delights-cafe'
-            // type={data.sweetDelightsCafeData[0].type}
+            projectData={data.sweetDelightsCafeData}
           />
-        </LazyLoad>
-        <LazyLoad height={200} offset={100} once >
-          <Project
-            title='Golden Hour Cafe'
-            project={data.goldenHourCafeData}
-            category='commercial'
-            urlPath='golden-hour-cafe'
-            // type={data.goldenHourCafeData[0].type}
-          />
-        </LazyLoad>
+        {/* </LazyLoad> */}
 
-        <LazyLoad height={200} offset={100} once >
+
+        {/* <LazyLoad height={200} offset={100} once > */}
           <Project
-            title='Serenity Dental'
-            project={data.serenityDentalData}
-            category='commercial'
-            urlPath='serenity-dental'
-            // type={data.serenityDentalData[0].type}
+            projectData={data.goldenHourCafeData}
           />
-        </LazyLoad> */}
+        {/* </LazyLoad> */}
+
+        {/* <LazyLoad height={200} offset={100} once > */}
+          <Project
+            projectData={data.serenityDentalData}
+          />
+        {/* </LazyLoad> */}
+
       </>
     )
   }

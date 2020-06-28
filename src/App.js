@@ -1,8 +1,8 @@
 import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Home from './pages/Home'
-// import About from './pages/About'
+// import Home from './pages/Home'
+import Gallery from './components/Gallery'
 
 import ProjectDetails from './components/ProjectDetails'
 import Footer from './components/Footer'
@@ -21,7 +21,7 @@ export const Layout = styled.main`
 `
 
 function App() {
-  // console.log('app')
+  console.log('app')
   return (
     <>
       <GlobalStyle />
@@ -40,7 +40,8 @@ function App() {
               </Route>
 
               <Route path='/'>
-                <Home /> {/* Links to <Gallery /> */}
+                <Gallery /> 
+                {/* <Home /> Links to <Gallery /> */}
               </Route>
             </Switch>
           </Layout>
