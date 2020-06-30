@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
@@ -106,23 +107,38 @@ class Overview extends Component {
   render() {
     let projectArr = []
     let firstProjectImgId
-    // let firstProjectUrlPath
+    // let projectUrlPath
     let firstObjName
+    let category
 
     for (let key in data) {
       let imgCollection = data[key].imgCollection
       let title = data[key].title
-      // firstProjectUrlPath = data[key].urlPath
+      let projectUrlPath = data[key].urlPath
       firstObjName = data[key].objName
 
       let firstProjectImg = imgCollection[0].img
       firstProjectImgId = imgCollection[0].id
+
+      category = data[key].category
+
+      // console.log(projectUrlPath)
+
+      let categoryUrlPath = ''
+      if (category === 'residential') {
+        categoryUrlPath = `/residential/${projectUrlPath}`
+      } else if (category === 'commercial') {
+        categoryUrlPath = `/commercial/${projectUrlPath}`
+      }
+
 
       projectArr.push({
         title: title,
         id: firstProjectImgId,
         img: firstProjectImg,
         objName: firstObjName,
+        categoryUrlPath,
+        category,
       })
     }
 
@@ -139,29 +155,31 @@ class Overview extends Component {
             {projectArr.map((item) => {
               return (
                 <section>
-                  <Figure
-                    onClick={() =>
-                      this.handleImgId(item.id, item.objName, item.img)
-                    }
-                  >
-                    <Img key={item.id} src={item.img} alt='' />
-                    <OverlayContainer
-                      onClick={() => this.hanndleOverlayClick()}
+                  <Link to={item.categoryUrlPath}>
+                    <Figure
+                    // onClick={() =>
+                    //   this.handleImgId(item.id, item.objName, item.img)
+                    // }
                     >
-                      <FontAwesomeIcon
-                        icon={faSearchPlus}
-                        color='white'
-                        size='3x'
-                      />
-                    </OverlayContainer>
-                  </Figure>
+                      <Img key={item.id} src={item.img} alt='' />
+                      <OverlayContainer
+                        onClick={() => this.hanndleOverlayClick()}
+                      >
+                        <FontAwesomeIcon
+                          icon={faSearchPlus}
+                          color='white'
+                          size='3x'
+                        />
+                      </OverlayContainer>
+                    </Figure>
+                  </Link>
                   <div>{item.title}</div>
                 </section>
               )
             })}
           </GridContainer>
 
-          {this.state.imgModalClicked && (
+          {/* {this.state.imgModalClicked && (
             <ImgModal
               imgId={this.state.imgId}
               objName={this.state.objName}
@@ -169,7 +187,7 @@ class Overview extends Component {
               closeBtn={this.handleOverlayClose}
               escKeyDown={this.handlEscKeyDown}
             />
-          )}
+          )} */}
         </>
         {/* </Layout>  */}
       </>

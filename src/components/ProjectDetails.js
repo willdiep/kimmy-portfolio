@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 import ImgModal from './ImgModal'
+// import Overview from './Overview'
 
 const Container = styled.article`
   /* background-color: lightskyblue; */
@@ -116,6 +117,8 @@ class ProjectDetails extends Component {
     const pathId = this.props.match.params.id.toLowerCase().split('-').join('')
     // console.log(pathId)
 
+    // console.log(this.data)
+
     // console.log(this.props.data) // apartmentAweData: {}
     let projectDataArray = []
 
@@ -137,7 +140,7 @@ class ProjectDetails extends Component {
       }
     }
 
-    console.log(projectData)
+    // console.log(projectData)
 
     const heading = this.props.match.params.id
       .replace(/-/g, ' ')
@@ -184,6 +187,8 @@ class ProjectDetails extends Component {
             />
           )}
         </Container>
+
+        {/* <Overview /> */}
       </>
     )
   }

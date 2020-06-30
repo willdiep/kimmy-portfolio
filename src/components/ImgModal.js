@@ -40,31 +40,19 @@ const Img = styled.img`
 class ImgModal extends Component {
   state = {
     cursor: 0,
-    objName: '',
     imgCollection: [],
   }
 
   componentDidMount() {
-    const { imgId, objName, projectData } = this.props
+    const { imgId, projectData } = this.props
 
-    // console.log(objName)
+    // console.log(imgId)
     // console.log(projectData)
 
-    for (let key in projectData) {
-      // console.log(typeof key)
-      // console.log(objName)
-      if (key === objName) {
-        // console.log(projectData[objName])
-        this.setState(
-          {
-            cursor: imgId,
-            objName,
-            imgCollection: projectData[objName].imgCollection,
-          }
-          // console.log('current state cursor: ', this.state.cursor)
-        )
-      }
-    }
+    this.setState({
+      cursor: imgId,
+      imgCollection: projectData.imgCollection,
+    })
 
     window.addEventListener('keydown', (e) => {
       // console.log(e.keyCode)

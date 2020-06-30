@@ -7,7 +7,8 @@ import Home from './pages/Home'
 import ProjectDetails from './components/ProjectDetails'
 import Footer from './components/Footer'
 
-import * as data from './data'
+// import * as data from './data'
+import data from './data.json'
 
 import './styles/reboot.css'
 import styled from 'styled-components'
