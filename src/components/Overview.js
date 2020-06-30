@@ -63,6 +63,8 @@ class Overview extends Component {
   state = {
     imgModalClicked: false,
     imgId: 0,
+    objName: '',
+    imgUrlPath: null,
   }
 
   hanndleOverlayClick = () => {
@@ -92,25 +94,40 @@ class Overview extends Component {
     )
   }
 
-  handleImgId = (id) => {
+  handleImgId = (id, objName, imgUrlPath) => {
     // console.log(id)
+    // console.log(objName)
     this.setState({
       imgId: id,
+      objName,
+      imgUrlPath,
     })
   }
   render() {
     let projectArr = []
+    let firstProjectImgId
+    // let firstProjectUrlPath
+    let firstObjName
 
     for (let key in data) {
       let imgCollection = data[key].imgCollection
       let title = data[key].title
+      // firstProjectUrlPath = data[key].urlPath
+      firstObjName = data[key].objName
 
       let firstProjectImg = imgCollection[0].img
+      firstProjectImgId = imgCollection[0].id
 
-      projectArr.push({ title: title, img: firstProjectImg })
+      projectArr.push({
+        title: title,
+        id: firstProjectImgId,
+        img: firstProjectImg,
+        objName: firstObjName,
+      })
     }
 
-    console.log(projectArr)
+    // console.log(data)
+    // console.log(projectArr)
 
     return (
       <>
@@ -122,23 +139,39 @@ class Overview extends Component {
             {projectArr.map((item) => {
               return (
                 <section>
-                  <Figure onClick={() => this.handleImgId(item.id)}>
+                  <Figure
+                    onClick={() =>
+                      this.handleImgId(item.id, item.objName, item.img)
+                    }
+                  >
                     <Img key={item.id} src={item.img} alt='' />
-                  <OverlayContainer onClick={() => this.hanndleOverlayClick()}>
-                    <FontAwesomeIcon
-                      icon={faSearchPlus}
-                      color='white'
-                      size='3x'
-                    />
-                  </OverlayContainer>
+                    <OverlayContainer
+                      onClick={() => this.hanndleOverlayClick()}
+                    >
+                      <FontAwesomeIcon
+                        icon={faSearchPlus}
+                        color='white'
+                        size='3x'
+                      />
+                    </OverlayContainer>
                   </Figure>
                   <div>{item.title}</div>
                 </section>
               )
             })}
           </GridContainer>
+
+          {this.state.imgModalClicked && (
+            <ImgModal
+              imgId={this.state.imgId}
+              objName={this.state.objName}
+              projectData={data}
+              closeBtn={this.handleOverlayClose}
+              escKeyDown={this.handlEscKeyDown}
+            />
+          )}
         </>
-        {/* </Layout> */}
+        {/* </Layout>  */}
       </>
     )
   }

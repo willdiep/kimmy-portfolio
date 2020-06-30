@@ -40,11 +40,31 @@ const Img = styled.img`
 class ImgModal extends Component {
   state = {
     cursor: 0,
+    objName: '',
     imgCollection: [],
   }
 
   componentDidMount() {
-    const { imgId, projectData } = this.props
+    const { imgId, objName, projectData } = this.props
+
+    // console.log(objName)
+    // console.log(projectData)
+
+    for (let key in projectData) {
+      // console.log(typeof key)
+      // console.log(objName)
+      if (key === objName) {
+        // console.log(projectData[objName])
+        this.setState(
+          {
+            cursor: imgId,
+            objName,
+            imgCollection: projectData[objName].imgCollection,
+          }
+          // console.log('current state cursor: ', this.state.cursor)
+        )
+      }
+    }
 
     window.addEventListener('keydown', (e) => {
       // console.log(e.keyCode)
@@ -54,14 +74,6 @@ class ImgModal extends Component {
 
       this.handleImgNavigate(e)
     })
-
-    this.setState(
-      {
-        cursor: imgId,
-        imgCollection: projectData.imgCollection,
-      }
-      // console.log('current state cursor: ', this.state.cursor)
-    )
   }
 
   handleImgNavigate = (e) => {
@@ -108,11 +120,11 @@ class ImgModal extends Component {
   }
 
   render() {
-    const { projectData } = this.props
-
-    const clickedImgObj = projectData.imgCollection.find(
+    const clickedImgObj = this.state.imgCollection.find(
       (item) => item.id === this.state.cursor
     )
+
+    // console.log(clickedImgObj)
 
     let renderImg
     let renderId
@@ -129,8 +141,6 @@ class ImgModal extends Component {
       renderId = clickedImgObj.id
       renderImg = clickedImgObj.img
     }
-
-    // console.log('imgModal')
 
     return (
       <Container>

@@ -1,5 +1,6 @@
 {
   "ruthvenTownhouseA": {
+    "objName": "ruthvenTownhouseA",
     "title": "Ruthven Townhouse A",
     "year": "2020",
     "location": "Ruthven St, Houston, Texas",
@@ -66,6 +67,7 @@
     ]
   },
   "ruthvenTownhouseB": {
+    "objName": "ruthvenTownhouseB",
     "title": "Ruthven Townhouse B",
     "year": "2020",
     "location": "Ruthven St, Houston, Texas",
@@ -112,6 +114,7 @@
     ]
   },
   "pineyPointCustomHome": {
+    "objName": "pineyPointCustomHome",
     "title": "Piney Point Custom Home",
     "year": "2019",
     "location": "Ruthven St, Houston, Texas",
@@ -182,6 +185,7 @@
     ]
   },
   "westMillenniaModelHouse": {
+    "objName": "westMillenniaModelHouse",
     "title": "West Millennia Model House",
     "year": "2019",
     "location": "Port Arthur, Texas",
@@ -244,6 +248,7 @@
     ]
   },
   "homeRemodeling": {
+    "objName": "homeRemodeling",
     "title": "Home Remodeling",
     "year": "2018",
     "location": "Indian Summer Rd, Houston, Texas",
@@ -286,6 +291,7 @@
     ]
   },
   "sunriseCityApartment": {
+    "objName": "sunriseCityApartment",
     "title": "Sunrise City Apartment",
     "year": "2017",
     "location": "Vietnam",
@@ -352,6 +358,7 @@
     ]
   },
   "topazApartment": {
+    "objName": "topazApartment",
     "title": "Topaz Apartment",
     "year": "2017",
     "location": "Vietnam",
@@ -390,6 +397,7 @@
     ]
   },
   "kitchenRemodeling": {
+    "objName": "kitchenRemodeling",
     "title": "Kitchen Remodeling",
     "year": "2017",
     "location": "Vietnam",
@@ -424,6 +432,7 @@
     ]
   },
   "apartmentAwe": {
+    "objName": "apartmentAwe",
     "title": "Apartment AWE",
     "year": "2016",
     "location": "Vietnam",
@@ -454,6 +463,7 @@
     ]
   },
   "mOneApartment": {
+    "objName": "mOneApartment",
     "title": "M-One Apartment",
     "year": "2016",
     "location": "Vietnam",
@@ -495,15 +505,16 @@
       },
       {
         "id": 9,
-        "img": "/assets/images/residential/2-ruthven-townhouse-b/09.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/09.jpeg"
       },
       {
         "id": 10,
-        "img": "/assets/images/residential/2-ruthven-townhouse-b/10.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/10.jpeg"
       }
     ]
   },
   "masteriApartment": {
+    "objName": "masteriApartment",
     "title": "Masteri Apartment",
     "year": "2016",
     "location": "Vietnam",
@@ -534,19 +545,12 @@
       {
         "id": 6,
         "img": "/assets/images/residential/12-masteri-apartment/06.jpeg"
-      },
-      {
-        "id": 7,
-        "img": "/assets/images/residential/12-masteri-apartment/07.jpeg"
-      },
-      {
-        "id": 8,
-        "img": "/assets/images/residential/12-masteri-apartment/08.jpeg"
       }
     ]
   },
   "vinhomeB6Apartment": {
-    "title": "The Park Residence",
+    "objName": "vinhomeB6Apartment",
+    "title": "Vinhome B6 Apartment",
     "year": "2016",
     "location": "Vietnam",
     "description": "1,250 square feet",
@@ -572,22 +576,11 @@
       {
         "id": 5,
         "img": "/assets/images/residential/13-vinhome-b6-apartment/05.jpeg"
-      },
-      {
-        "id": 6,
-        "img": "/assets/images/residential/13-vinhome-b6-apartment/06.jpeg"
-      },
-      {
-        "id": 7,
-        "img": "/assets/images/residential/13-vinhome-b6-apartment/07.jpeg"
-      },
-      {
-        "id": 8,
-        "img": "/assets/images/residential/13-vinhome-b6-apartment/08.jpeg"
       }
     ]
   },
   "theParkResidence": {
+    "objName": "theParkResidence",
     "title": "The Park Residence",
     "year": "2016",
     "location": "Vietnam",
@@ -618,6 +611,7 @@
     ]
   },
   "northSaigonApartment": {
+    "objName": "northSaigonApartment",
     "title": "North SaiGon Apartment",
     "year": "2016",
     "location": "Vietnam",
