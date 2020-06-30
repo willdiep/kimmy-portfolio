@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import { Link } from 'react-router-dom'
 
 // import LazyLoad from 'react-lazyload'
 import styled from 'styled-components'
@@ -21,9 +20,7 @@ class Gallery extends Component {
     // console.log('render gallery')
     return (
       <>
-        <a href='#residential'>
-          <ProjectTypeHeader>residential</ProjectTypeHeader>
-        </a>
+        <ProjectTypeHeader>residential</ProjectTypeHeader>
 
         <Project projectData={data.apartmentAweData} />
 

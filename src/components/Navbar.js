@@ -41,27 +41,27 @@ class Navbar extends Component {
   render() {
     return (
       <Nav>
-        <LeftNav>
-          <Link to='/'>KIMMY INTERIOR DESIGNER</Link>
-        </LeftNav>
+          <LeftNav>
+            <Link to='/'>KIMMY INTERIOR DESIGNER</Link>
+          </LeftNav>
 
-        <RightNav>
-          <div>
-            <Link to='/#residential'>Residential</Link>
-          </div>
-          <div>
-            <Link to='/not-set'>Commercial</Link>
-          </div>
+          <RightNav>
+            <div>
+              <Link to='/#residential'>Residential</Link>
+            </div>
+            <div>
+              <Link to='/not-set'>Commercial</Link>
+            </div>
 
-          {/* <div>
+            {/* <div>
             <Link to='/about'>About</Link>
           </div> */}
 
-          <div>
-            {/* <Link to='/resume'>Resume</Link> */}
-            <a href={resumePDF}>Resume</a>
-          </div>
-        </RightNav>
+            <div>
+              {/* <Link to='/resume'>Resume</Link> */}
+              <a href={resumePDF}>Resume</a>
+            </div>
+          </RightNav>
       </Nav>
     )
   }

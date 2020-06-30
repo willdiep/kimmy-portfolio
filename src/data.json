@@ -1,0 +1,662 @@
+{
+  "ruthvenTownhouseA": {
+    "title": "Ruthven Townhouse A",
+    "year": "2020",
+    "location": "Ruthven St, Houston, Texas",
+    "description": "3,023 square feet",
+    "category": "residential",
+    "urlPath": "ruthven-townhouse-a",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/08.jpeg"
+      },
+      {
+        "id": 9,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/09.jpeg"
+      },
+      {
+        "id": 10,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/10.jpeg"
+      },
+      {
+        "id": 11,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/11.jpeg"
+      },
+      {
+        "id": 12,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/12.jpeg"
+      },
+      {
+        "id": 13,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/13.jpeg"
+      },
+      {
+        "id": 14,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/14.jpeg"
+      }
+    ]
+  },
+  "ruthvenTownhouseB": {
+    "title": "Ruthven Townhouse B",
+    "year": "2020",
+    "location": "Ruthven St, Houston, Texas",
+    "description": "3,023 square feet",
+    "category": "residential",
+    "urlPath": "ruthven-townhouse-b",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/08.jpeg"
+      },
+      {
+        "id": 9,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/09.jpeg"
+      }
+    ]
+  },
+  "pineyPointCustomHome": {
+    "title": "Piney Point Custom Home",
+    "year": "2019",
+    "location": "Ruthven St, Houston, Texas",
+    "description": "6,300 square feet",
+    "category": "residential",
+    "urlPath": "piney-point-custom-home",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/3-piney-point-custom-home/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/3-piney-point-custom-home/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/3-piney-point-custom-home/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/3-piney-point-custom-home/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/3-piney-point-custom-home/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/3-piney-point-custom-home/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/residential/3-piney-point-custom-home/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/residential/3-piney-point-custom-home/08.jpeg"
+      },
+      {
+        "id": 9,
+        "img": "/assets/images/residential/3-piney-point-custom-home/09.jpeg"
+      },
+      {
+        "id": 10,
+        "img": "/assets/images/residential/3-piney-point-custom-home/10.jpeg"
+      },
+      {
+        "id": 11,
+        "img": "/assets/images/residential/3-piney-point-custom-home/11.jpeg"
+      },
+      {
+        "id": 12,
+        "img": "/assets/images/residential/3-piney-point-custom-home/12.jpeg"
+      },
+      {
+        "id": 13,
+        "img": "/assets/images/residential/3-piney-point-custom-home/13.jpeg"
+      },
+      {
+        "id": 14,
+        "img": "/assets/images/residential/3-piney-point-custom-home/14.jpeg"
+      },
+      {
+        "id": 15,
+        "img": "/assets/images/residential/3-piney-point-custom-home/15.jpeg"
+      }
+    ]
+  },
+  "westMillenniaModelHouse": {
+    "title": "West Millennia Model House",
+    "year": "2019",
+    "location": "Port Arthur, Texas",
+    "description": "1,975 square feet",
+    "category": "residential",
+    "urlPath": "west-millennia-model-house",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/4-west-millennia-model-house/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/4-west-millennia-model-house/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/4-west-millennia-model-house/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/4-west-millennia-model-house/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/4-west-millennia-model-house/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/4-west-millennia-model-house/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/residential/4-west-millennia-model-house/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/residential/4-west-millennia-model-house/08.jpeg"
+      },
+      {
+        "id": 9,
+        "img": "/assets/images/residential/4-west-millennia-model-house/09.jpeg"
+      },
+      {
+        "id": 10,
+        "img": "/assets/images/residential/4-west-millennia-model-house/10.jpeg"
+      },
+      {
+        "id": 11,
+        "img": "/assets/images/residential/4-west-millennia-model-house/11.jpeg"
+      },
+      {
+        "id": 12,
+        "img": "/assets/images/residential/4-west-millennia-model-house/12.jpeg"
+      },
+      {
+        "id": 13,
+        "img": "/assets/images/residential/4-west-millennia-model-house/13.jpeg"
+      }
+    ]
+  },
+  "homeRemodeling": {
+    "title": "Home Remodeling",
+    "year": "2018",
+    "location": "Indian Summer Rd, Houston, Texas",
+    "description": "1,752 square feet",
+    "category": "residential",
+    "urlPath": "home-remodeling",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/5-home-remodeling/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/5-home-remodeling/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/5-home-remodeling/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/5-home-remodeling/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/5-home-remodeling/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/5-home-remodeling/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/residential/5-home-remodeling/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/residential/5-home-remodeling/08.jpeg"
+      }
+    ]
+  },
+  "sunriseCityApartment": {
+    "title": "Sunrise City Apartment",
+    "year": "2017",
+    "location": "Vietnam",
+    "description": "1,108 square feet",
+    "category": "residential",
+    "urlPath": "sunrise-city-apartment",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/08.jpeg"
+      },
+      {
+        "id": 9,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/09.jpeg"
+      },
+      {
+        "id": 10,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/10.jpeg"
+      },
+      {
+        "id": 11,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/11.jpeg"
+      },
+      {
+        "id": 12,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/12.jpeg"
+      },
+      {
+        "id": 13,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/13.jpeg"
+      },
+      {
+        "id": 14,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/14.jpeg"
+      }
+    ]
+  },
+  "topazApartment": {
+    "title": "Topaz Apartment",
+    "year": "2017",
+    "location": "Vietnam",
+    "description": "908 square feet",
+    "category": "residential",
+    "urlPath": "topaz-apartment",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/7-topaz-apartment/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/7-topaz-apartment/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/7-topaz-apartment/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/7-topaz-apartment/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/7-topaz-apartment/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/7-topaz-apartment/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/residential/7-topaz-apartment/07.jpeg"
+      }
+    ]
+  },
+  "kitchenRemodeling": {
+    "title": "Kitchen Remodeling",
+    "year": "2017",
+    "location": "Vietnam",
+    "description": "908 square feet",
+    "category": "residential",
+    "urlPath": "kitchen-remodeling",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/8-kitchen-remodeling/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/8-kitchen-remodeling/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/8-kitchen-remodeling/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/8-kitchen-remodeling/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/8-kitchen-remodeling/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/8-kitchen-remodeling/06.jpeg"
+      }
+    ]
+  },
+  "apartmentAwe": {
+    "title": "Apartment AWE",
+    "year": "2016",
+    "location": "Vietnam",
+    "description": "1,250 square feet",
+    "category": "residential",
+    "urlPath": "apartment-awe",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/9-apartment-awe/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/9-apartment-awe/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/9-apartment-awe/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/9-apartment-awe/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/9-apartment-awe/05.jpeg"
+      }
+    ]
+  },
+  "mOneApartment": {
+    "title": "M-One Apartment",
+    "year": "2016",
+    "location": "Vietnam",
+    "description": "1,115 square feet",
+    "category": "residential",
+    "urlPath": "m-one-apartment",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/10-m-one-apartment/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/10-m-one-apartment/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/10-m-one-apartment/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/10-m-one-apartment/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/10-m-one-apartment/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/10-m-one-apartment/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/residential/10-m-one-apartment/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/residential/10-m-one-apartment/08.jpeg"
+      },
+      {
+        "id": 9,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/09.jpeg"
+      },
+      {
+        "id": 10,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/10.jpeg"
+      }
+    ]
+  },
+  "masteriApartment": {
+    "title": "Masteri Apartment",
+    "year": "2016",
+    "location": "Vietnam",
+    "description": "978 square feet",
+    "category": "residential",
+    "urlPath": "masteri-apartment",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/12-masteri-apartment/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/12-masteri-apartment/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/12-masteri-apartment/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/12-masteri-apartment/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/12-masteri-apartment/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/12-masteri-apartment/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/residential/12-masteri-apartment/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/residential/12-masteri-apartment/08.jpeg"
+      }
+    ]
+  },
+  "vinhomeB6Apartment": {
+    "title": "The Park Residence",
+    "year": "2016",
+    "location": "Vietnam",
+    "description": "1,250 square feet",
+    "category": "residential",
+    "urlPath": "vinhome-b6-apartment",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/08.jpeg"
+      }
+    ]
+  },
+  "theParkResidence": {
+    "title": "The Park Residence",
+    "year": "2016",
+    "location": "Vietnam",
+    "description": "725 square feet",
+    "category": "residential",
+    "urlPath": "the-park-residence",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/14-the-park-residence/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/14-the-park-residence/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/14-the-park-residence/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/14-the-park-residence/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/14-the-park-residence/05.jpeg"
+      }
+    ]
+  },
+  "northSaigonApartment": {
+    "title": "North SaiGon Apartment",
+    "year": "2016",
+    "location": "Vietnam",
+    "description": "732 square feet",
+    "category": "residential",
+    "urlPath": "north-saigon-apartment",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/residential/15-north-saigon-apartment/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/residential/15-north-saigon-apartment/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/residential/15-north-saigon-apartment/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/residential/15-north-saigon-apartment/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/residential/15-north-saigon-apartment/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/residential/15-north-saigon-apartment/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/residential/15-north-saigon-apartment/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/residential/15-north-saigon-apartment/08.jpeg"
+      }
+    ]
+  }
+}
