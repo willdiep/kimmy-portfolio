@@ -122,6 +122,7 @@ class ProjectDetails extends Component {
     // console.log(this.props.data) // apartmentAweData: {}
     let projectDataArray = []
 
+    let year = ''
     let description = ''
 
     let projectData = []
@@ -136,6 +137,7 @@ class ProjectDetails extends Component {
         projectData = this.props.data[key]
         // console.log(projectDataArray)
 
+        year = this.props.data[key].year
         description = this.props.data[key].description
       }
     }
@@ -174,7 +176,10 @@ class ProjectDetails extends Component {
 
               <br></br>
 
-              <DescriptionText>{description}</DescriptionText>
+              <DescriptionText>
+                {year} | {description}
+              
+              </DescriptionText>
             </div>
           </DetailSection>
 

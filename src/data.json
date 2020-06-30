@@ -652,5 +652,212 @@
         "img": "/assets/images/residential/15-north-saigon-apartment/08.jpeg"
       }
     ]
+  },
+  "serenityDental": {
+    "objName": "serenityDental",
+    "title": "Serenity Dental",
+    "year": "2020",
+    "location": "West Embers Plaza,The Woodland, Houston, Texas",
+    "description": "3,500 square feet",
+    "category": "commercial",
+    "urlPath": "serenity-dental",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/commercial/16-serenity-dental/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/commercial/16-serenity-dental/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/commercial/16-serenity-dental/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/commercial/16-serenity-dental/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/commercial/16-serenity-dental/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/commercial/16-serenity-dental/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/commercial/16-serenity-dental/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/commercial/16-serenity-dental/08.jpeg"
+      },
+      {
+        "id": 9,
+        "img": "/assets/images/commercial/16-serenity-dental/09.jpeg"
+      },
+      {
+        "id": 10,
+        "img": "/assets/images/commercial/16-serenity-dental/10.jpeg"
+      },
+      {
+        "id": 11,
+        "img": "/assets/images/commercial/16-serenity-dental/11.jpeg"
+      },
+      {
+        "id": 12,
+        "img": "/assets/images/commercial/16-serenity-dental/12.jpeg"
+      }
+    ]
+  },
+  "newLeafCoffee&Tea": {
+    "objName": "newLeafCoffee&Tea",
+    "title": "New Leaf Coffee & Tea",
+    "year": "2020",
+    "location": "West Embers Plaza,The Woodland, Houston, Texas",
+    "description": "1,875 square feet",
+    "category": "commercial",
+    "urlPath": "new-leaf-coffee-&-tea",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/07.jpeg"
+      }
+    ]
+  },
+  "myNowLlc": {
+    "objName": "myNowLlc",
+    "title": "My Now LLC",
+    "year": "2019",
+    "location": "West Embers Plaza,The Woodland, Houston, Texas",
+    "description": "1,125 square feet",
+    "category": "commercial",
+    "urlPath": "my-now-llc",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/commercial/18-my-now-llc/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/commercial/18-my-now-llc/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/commercial/18-my-now-llc/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/commercial/18-my-now-llc/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/commercial/18-my-now-llc/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/commercial/18-my-now-llc/06.jpeg"
+      }
+    ]
+  },
+  "kbShop": {
+    "objName": "kbShop",
+    "title": "KB Shop",
+    "year": "2017",
+    "location": "Vietnam",
+    "description": "615 square feet",
+    "category": "commercial",
+    "urlPath": "kb-shop",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/commercial/19-kb-shop/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/commercial/19-kb-shop/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/commercial/19-kb-shop/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/commercial/19-kb-shop/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/commercial/19-kb-shop/05.jpeg"
+      }
+    ]
+  },
+  "sweetDelights": {
+    "objName": "sweetDelights",
+    "title": "Sweet Delights",
+    "year": "2017",
+    "location": "Vietnam",
+    "description": "1,500 square feet",
+    "category": "commercial",
+    "urlPath": "sweet-delights",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/commercial/20-sweet-delights/01.jpeg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/commercial/20-sweet-delights/02.jpeg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/commercial/20-sweet-delights/03.jpeg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/commercial/20-sweet-delights/04.jpeg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/commercial/20-sweet-delights/05.jpeg"
+      },
+      {
+        "id": 6,
+        "img": "/assets/images/commercial/20-sweet-delights/06.jpeg"
+      },
+      {
+        "id": 7,
+        "img": "/assets/images/commercial/20-sweet-delights/07.jpeg"
+      },
+      {
+        "id": 8,
+        "img": "/assets/images/commercial/20-sweet-delights/08.jpeg"
+      }
+    ]
   }
 }

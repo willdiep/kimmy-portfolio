@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
-import ImgModal from './ImgModal'
 import data from '../data.json'
 
 const ProjectTypeHeader = styled.h2`
@@ -21,12 +20,12 @@ const GridContainer = styled.article`
   grid-row-gap: 5rem;
 `
 
-const ProjectHeader = styled.h3`
-  /* background-color: red; */
-  text-transform: uppercase;
-  padding: 3rem 0 1rem 0;
-  /* margin-top: 2rem; */
-`
+// const ProjectHeader = styled.h3`
+//   /* background-color: red; */
+//   text-transform: uppercase;
+//   padding: 3rem 0 1rem 0;
+//   /* margin-top: 2rem; */
+// `
 
 const Img = styled.img`
   display: block;
@@ -131,7 +130,6 @@ class Overview extends Component {
         categoryUrlPath = `/commercial/${projectUrlPath}`
       }
 
-
       projectArr.push({
         title: title,
         id: firstProjectImgId,
@@ -147,49 +145,41 @@ class Overview extends Component {
 
     return (
       <>
+
         <ProjectTypeHeader>residential</ProjectTypeHeader>
+        <br></br>
 
-        {/* <Layout> */}
-        <>
-          <GridContainer>
-            {projectArr.map((item) => {
-              return (
-                <section>
-                  <Link to={item.categoryUrlPath}>
-                    <Figure
-                    // onClick={() =>
-                    //   this.handleImgId(item.id, item.objName, item.img)
-                    // }
+        <GridContainer>
+          {projectArr.map((item) => {
+            return (
+              <section>
+                <Link to={item.categoryUrlPath}>
+                  <Figure
+                  // onClick={() =>
+                  //   this.handleImgId(item.id, item.objName, item.img)
+                  // }
+                  >
+                    <Img key={item.id} src={item.img} alt='' />
+                    <OverlayContainer
+                      onClick={() => this.hanndleOverlayClick()}
                     >
-                      <Img key={item.id} src={item.img} alt='' />
-                      <OverlayContainer
-                        onClick={() => this.hanndleOverlayClick()}
-                      >
-                        <FontAwesomeIcon
-                          icon={faSearchPlus}
-                          color='white'
-                          size='3x'
-                        />
-                      </OverlayContainer>
-                    </Figure>
-                  </Link>
-                  <div>{item.title}</div>
-                </section>
-              )
-            })}
-          </GridContainer>
+                      <FontAwesomeIcon
+                        icon={faSearchPlus}
+                        color='white'
+                        size='3x'
+                      />
+                    </OverlayContainer>
+                  </Figure>
+                </Link>
+                <div>{item.title}</div>
+              </section>
+            )
+          })}
+        </GridContainer>
 
-          {/* {this.state.imgModalClicked && (
-            <ImgModal
-              imgId={this.state.imgId}
-              objName={this.state.objName}
-              projectData={data}
-              closeBtn={this.handleOverlayClose}
-              escKeyDown={this.handlEscKeyDown}
-            />
-          )} */}
-        </>
-        {/* </Layout>  */}
+        <ProjectTypeHeader>commercial</ProjectTypeHeader>
+
+        <br></br>
       </>
     )
   }
