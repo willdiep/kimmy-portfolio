@@ -154,7 +154,7 @@ class ProjectDetails extends Component {
       <>
         <Container>
           <ImgSection>
-            {projectDataArray.map((item) => {
+            {projectDataArray.slice(1, projectDataArray.length).map((item) => {
               return (
                 <Figure onClick={() => this.handleImgId(item.id)}>
                   <Img src={item.img} alt='' />

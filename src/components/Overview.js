@@ -34,6 +34,11 @@ const Img = styled.img`
   height: 100%;
 `
 
+const ProjectTitle = styled.div`
+  text-align: center;
+`
+
+
 const OverlayContainer = styled.div`
   position: absolute;
   height: 100%;
@@ -185,7 +190,7 @@ class Overview extends Component {
                     </OverlayContainer>
                   </Figure>
                 </Link>
-                <div>{item.title}</div>
+                <ProjectTitle>{item.title}</ProjectTitle>
               </section>
             )
           })}
