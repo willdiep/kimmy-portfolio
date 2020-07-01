@@ -8,7 +8,7 @@ import data from '../data.json'
 const ProjectTypeHeader = styled.h2`
   text-transform: uppercase;
   text-align: center;
-  padding: 1rem 0;
+  padding: ${(props) => (props.commercial ? '2rem 0 3rem 0' : '2rem 0')};
   /* background-color: orange; */
   margin-top: ${(props) => props.commercial && '5rem'};
 `
@@ -32,6 +32,10 @@ const Img = styled.img`
   width: 100%;
   /* height: auto; */
   height: 100%;
+`
+
+const ProjectTitle = styled.div`
+  text-align: center;
 `
 
 const OverlayContainer = styled.div`
@@ -141,57 +145,74 @@ class Overview extends Component {
     }
 
     // console.log(data)
-    console.log(projectArr)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    // console.log(projectArr)
 
     return (
       <>
-
         <ProjectTypeHeader>residential</ProjectTypeHeader>
         <br></br>
 
         <GridContainer>
-          {projectArr.filter( project => project.category === 'commercial') &&projectArr.map((item) => {
-            return (
-              <section>
-                <Link to={item.categoryUrlPath}>
-                  <Figure
-                  // onClick={() =>
-                  //   this.handleImgId(item.id, item.objName, item.img)
-                  // }
-                  >
-                    <Img key={item.id} src={item.img} alt='' />
-                    <OverlayContainer
-                      onClick={() => this.hanndleOverlayClick()}
+          {projectArr
+            .filter((project) => project.category === 'residential')
+            .map((item) => {
+              return (
+                <section>
+                  <Link to={item.categoryUrlPath}>
+                    <Figure
+                    // onClick={() =>
+                    //   this.handleImgId(item.id, item.objName, item.img)
+                    // }
                     >
-                      <FontAwesomeIcon
-                        icon={faSearchPlus}
-                        color='white'
-                        size='3x'
-                      />
-                    </OverlayContainer>
-                  </Figure>
-                </Link>
-                <div>{item.title}</div>
-              </section>
-            )
-          })}
+                      <Img key={item.id} src={item.img} alt='' />
+                      <OverlayContainer
+                        onClick={() => this.hanndleOverlayClick()}
+                      >
+                        <FontAwesomeIcon
+                          icon={faSearchPlus}
+                          color='white'
+                          size='3x'
+                        />
+                      </OverlayContainer>
+                    </Figure>
+                  </Link>
+                  <ProjectTitle>{item.title}</ProjectTitle>
+                </section>
+              )
+            })}
         </GridContainer>
 
-        <ProjectTypeHeader>commercial</ProjectTypeHeader>
+        <ProjectTypeHeader commercial>commercial</ProjectTypeHeader>
+
+        <GridContainer>
+          {projectArr
+            .filter((project) => project.category === 'commercial')
+            .map((item) => {
+              return (
+                <section>
+                  <Link to={item.categoryUrlPath}>
+                    <Figure
+                    // onClick={() =>
+                    //   this.handleImgId(item.id, item.objName, item.img)
+                    // }
+                    >
+                      <Img key={item.id} src={item.img} alt='' />
+                      <OverlayContainer
+                        onClick={() => this.hanndleOverlayClick()}
+                      >
+                        <FontAwesomeIcon
+                          icon={faSearchPlus}
+                          color='white'
+                          size='3x'
+                        />
+                      </OverlayContainer>
+                    </Figure>
+                  </Link>
+                  <div>{item.title}</div>
+                </section>
+              )
+            })}
+        </GridContainer>
 
         <br></br>
       </>

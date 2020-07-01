@@ -51,7 +51,10 @@ class ImgModal extends Component {
 
     this.setState({
       cursor: imgId,
-      imgCollection: projectData.imgCollection,
+      imgCollection: projectData.imgCollection.slice(
+        1,
+        projectData.imgCollection.length
+      ),
     })
 
     window.addEventListener('keydown', (e) => {

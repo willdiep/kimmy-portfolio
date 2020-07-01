@@ -135,7 +135,7 @@ class ProjectDetails extends Component {
         // console.log(this.props.data[key].imgCollection)
         projectDataArray = this.props.data[key].imgCollection
         projectData = this.props.data[key]
-        // console.log(projectDataArray)
+        console.log(projectDataArray)
 
         year = this.props.data[key].year
         description = this.props.data[key].description
@@ -154,7 +154,7 @@ class ProjectDetails extends Component {
       <>
         <Container>
           <ImgSection>
-            {projectDataArray.map((item) => {
+            {projectDataArray.slice(1, projectDataArray.length).map((item) => {
               return (
                 <Figure onClick={() => this.handleImgId(item.id)}>
                   <Img src={item.img} alt='' />
@@ -178,7 +178,6 @@ class ProjectDetails extends Component {
 
               <DescriptionText>
                 {year} | {description}
-              
               </DescriptionText>
             </div>
           </DetailSection>
