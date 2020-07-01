@@ -141,7 +141,21 @@ class Overview extends Component {
     }
 
     // console.log(data)
-    // console.log(projectArr)
+    console.log(projectArr)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     return (
       <>
@@ -150,7 +164,7 @@ class Overview extends Component {
         <br></br>
 
         <GridContainer>
-          {projectArr.map((item) => {
+          {projectArr.filter( project => project.category === 'commercial') &&projectArr.map((item) => {
             return (
               <section>
                 <Link to={item.categoryUrlPath}>
