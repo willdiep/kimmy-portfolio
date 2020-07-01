@@ -145,7 +145,7 @@ class Overview extends Component {
     }
 
     // console.log(data)
-    console.log(projectArr)
+    // console.log(projectArr)
 
     return (
       <>
