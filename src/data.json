@@ -9,60 +9,64 @@
     "urlPath": "ruthven-townhouse-a",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/01.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/02.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/03.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/04.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/05.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/06.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/07.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/07.jpg"
       },
       {
         "id": 8,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/08.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/08.jpg"
       },
       {
         "id": 9,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/09.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/09.jpg"
       },
       {
         "id": 10,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/10.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/10.jpg"
       },
       {
         "id": 11,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/11.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/11.jpg"
       },
       {
         "id": 12,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/12.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/12.jpg"
       },
       {
         "id": 13,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/13.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/13.jpg"
       },
       {
         "id": 14,
-        "img": "/assets/images/residential/1-ruthven-townhouse-a/14.jpeg"
+        "img": "/assets/images/residential/1-ruthven-townhouse-a/14.jpg"
       }
     ]
   },
@@ -76,40 +80,44 @@
     "urlPath": "ruthven-townhouse-b",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/2-ruthven-townhouse-b/01.jpeg"
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/2-ruthven-townhouse-b/02.jpeg"
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/2-ruthven-townhouse-b/03.jpeg"
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/2-ruthven-townhouse-b/04.jpeg"
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/2-ruthven-townhouse-b/05.jpeg"
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/residential/2-ruthven-townhouse-b/06.jpeg"
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/residential/2-ruthven-townhouse-b/07.jpeg"
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/07.jpg"
       },
       {
         "id": 8,
-        "img": "/assets/images/residential/2-ruthven-townhouse-b/08.jpeg"
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/08.jpg"
       },
       {
         "id": 9,
-        "img": "/assets/images/residential/2-ruthven-townhouse-b/09.jpeg"
+        "img": "/assets/images/residential/2-ruthven-townhouse-b/09.jpg"
       }
     ]
   },
@@ -123,64 +131,68 @@
     "urlPath": "piney-point-custom-home",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/3-piney-point-custom-home/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/3-piney-point-custom-home/01.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/3-piney-point-custom-home/02.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/3-piney-point-custom-home/03.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/3-piney-point-custom-home/04.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/3-piney-point-custom-home/05.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/residential/3-piney-point-custom-home/06.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/residential/3-piney-point-custom-home/07.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/07.jpg"
       },
       {
         "id": 8,
-        "img": "/assets/images/residential/3-piney-point-custom-home/08.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/08.jpg"
       },
       {
         "id": 9,
-        "img": "/assets/images/residential/3-piney-point-custom-home/09.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/09.jpg"
       },
       {
         "id": 10,
-        "img": "/assets/images/residential/3-piney-point-custom-home/10.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/10.jpg"
       },
       {
         "id": 11,
-        "img": "/assets/images/residential/3-piney-point-custom-home/11.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/11.jpg"
       },
       {
         "id": 12,
-        "img": "/assets/images/residential/3-piney-point-custom-home/12.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/12.jpg"
       },
       {
         "id": 13,
-        "img": "/assets/images/residential/3-piney-point-custom-home/13.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/13.jpg"
       },
       {
         "id": 14,
-        "img": "/assets/images/residential/3-piney-point-custom-home/14.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/14.jpg"
       },
       {
         "id": 15,
-        "img": "/assets/images/residential/3-piney-point-custom-home/15.jpeg"
+        "img": "/assets/images/residential/3-piney-point-custom-home/15.jpg"
       }
     ]
   },
@@ -194,56 +206,60 @@
     "urlPath": "west-millennia-model-house",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/4-west-millennia-model-house/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/4-west-millennia-model-house/01.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/4-west-millennia-model-house/02.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/4-west-millennia-model-house/03.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/4-west-millennia-model-house/04.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/4-west-millennia-model-house/05.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/residential/4-west-millennia-model-house/06.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/residential/4-west-millennia-model-house/07.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/07.jpg"
       },
       {
         "id": 8,
-        "img": "/assets/images/residential/4-west-millennia-model-house/08.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/08.jpg"
       },
       {
         "id": 9,
-        "img": "/assets/images/residential/4-west-millennia-model-house/09.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/09.jpg"
       },
       {
         "id": 10,
-        "img": "/assets/images/residential/4-west-millennia-model-house/10.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/10.jpg"
       },
       {
         "id": 11,
-        "img": "/assets/images/residential/4-west-millennia-model-house/11.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/11.jpg"
       },
       {
         "id": 12,
-        "img": "/assets/images/residential/4-west-millennia-model-house/12.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/12.jpg"
       },
       {
         "id": 13,
-        "img": "/assets/images/residential/4-west-millennia-model-house/13.jpeg"
+        "img": "/assets/images/residential/4-west-millennia-model-house/13.jpg"
       }
     ]
   },
@@ -257,36 +273,40 @@
     "urlPath": "home-remodeling",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/5-home-remodeling/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/5-home-remodeling/01.jpeg"
+        "img": "/assets/images/residential/5-home-remodeling/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/5-home-remodeling/02.jpeg"
+        "img": "/assets/images/residential/5-home-remodeling/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/5-home-remodeling/03.jpeg"
+        "img": "/assets/images/residential/5-home-remodeling/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/5-home-remodeling/04.jpeg"
+        "img": "/assets/images/residential/5-home-remodeling/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/5-home-remodeling/05.jpeg"
+        "img": "/assets/images/residential/5-home-remodeling/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/residential/5-home-remodeling/06.jpeg"
+        "img": "/assets/images/residential/5-home-remodeling/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/residential/5-home-remodeling/07.jpeg"
+        "img": "/assets/images/residential/5-home-remodeling/07.jpg"
       },
       {
         "id": 8,
-        "img": "/assets/images/residential/5-home-remodeling/08.jpeg"
+        "img": "/assets/images/residential/5-home-remodeling/08.jpg"
       }
     ]
   },
@@ -300,60 +320,64 @@
     "urlPath": "sunrise-city-apartment",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/6-sunrise-city-apartment/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/01.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/02.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/03.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/04.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/05.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/06.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/07.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/07.jpg"
       },
       {
         "id": 8,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/08.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/08.jpg"
       },
       {
         "id": 9,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/09.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/09.jpg"
       },
       {
         "id": 10,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/10.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/10.jpg"
       },
       {
         "id": 11,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/11.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/11.jpg"
       },
       {
         "id": 12,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/12.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/12.jpg"
       },
       {
         "id": 13,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/13.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/13.jpg"
       },
       {
         "id": 14,
-        "img": "/assets/images/residential/6-sunrise-city-apartment/14.jpeg"
+        "img": "/assets/images/residential/6-sunrise-city-apartment/14.jpg"
       }
     ]
   },
@@ -367,32 +391,36 @@
     "urlPath": "topaz-apartment",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/7-topaz-apartment/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/7-topaz-apartment/01.jpeg"
+        "img": "/assets/images/residential/7-topaz-apartment/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/7-topaz-apartment/02.jpeg"
+        "img": "/assets/images/residential/7-topaz-apartment/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/7-topaz-apartment/03.jpeg"
+        "img": "/assets/images/residential/7-topaz-apartment/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/7-topaz-apartment/04.jpeg"
+        "img": "/assets/images/residential/7-topaz-apartment/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/7-topaz-apartment/05.jpeg"
+        "img": "/assets/images/residential/7-topaz-apartment/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/residential/7-topaz-apartment/06.jpeg"
+        "img": "/assets/images/residential/7-topaz-apartment/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/residential/7-topaz-apartment/07.jpeg"
+        "img": "/assets/images/residential/7-topaz-apartment/07.jpg"
       }
     ]
   },
@@ -406,28 +434,32 @@
     "urlPath": "kitchen-remodeling",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/8-kitchen-remodeling/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/8-kitchen-remodeling/01.jpeg"
+        "img": "/assets/images/residential/8-kitchen-remodeling/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/8-kitchen-remodeling/02.jpeg"
+        "img": "/assets/images/residential/8-kitchen-remodeling/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/8-kitchen-remodeling/03.jpeg"
+        "img": "/assets/images/residential/8-kitchen-remodeling/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/8-kitchen-remodeling/04.jpeg"
+        "img": "/assets/images/residential/8-kitchen-remodeling/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/8-kitchen-remodeling/05.jpeg"
+        "img": "/assets/images/residential/8-kitchen-remodeling/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/residential/8-kitchen-remodeling/06.jpeg"
+        "img": "/assets/images/residential/8-kitchen-remodeling/06.jpg"
       }
     ]
   },
@@ -441,24 +473,28 @@
     "urlPath": "apartment-awe",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/9-apartment-awe/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/9-apartment-awe/01.jpeg"
+        "img": "/assets/images/residential/9-apartment-awe/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/9-apartment-awe/02.jpeg"
+        "img": "/assets/images/residential/9-apartment-awe/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/9-apartment-awe/03.jpeg"
+        "img": "/assets/images/residential/9-apartment-awe/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/9-apartment-awe/04.jpeg"
+        "img": "/assets/images/residential/9-apartment-awe/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/9-apartment-awe/05.jpeg"
+        "img": "/assets/images/residential/9-apartment-awe/05.jpg"
       }
     ]
   },
@@ -472,44 +508,48 @@
     "urlPath": "m-one-apartment",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/10-m-one-apartment/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/10-m-one-apartment/01.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/10-m-one-apartment/02.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/10-m-one-apartment/03.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/10-m-one-apartment/04.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/10-m-one-apartment/05.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/residential/10-m-one-apartment/06.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/residential/10-m-one-apartment/07.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/07.jpg"
       },
       {
         "id": 8,
-        "img": "/assets/images/residential/10-m-one-apartment/08.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/08.jpg"
       },
       {
         "id": 9,
-        "img": "/assets/images/residential/10-m-one-apartment/09.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/09.jpg"
       },
       {
         "id": 10,
-        "img": "/assets/images/residential/10-m-one-apartment/10.jpeg"
+        "img": "/assets/images/residential/10-m-one-apartment/10.jpg"
       }
     ]
   },
@@ -523,28 +563,32 @@
     "urlPath": "masteri-apartment",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/12-masteri-apartment/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/12-masteri-apartment/01.jpeg"
+        "img": "/assets/images/residential/12-masteri-apartment/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/12-masteri-apartment/02.jpeg"
+        "img": "/assets/images/residential/12-masteri-apartment/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/12-masteri-apartment/03.jpeg"
+        "img": "/assets/images/residential/12-masteri-apartment/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/12-masteri-apartment/04.jpeg"
+        "img": "/assets/images/residential/12-masteri-apartment/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/12-masteri-apartment/05.jpeg"
+        "img": "/assets/images/residential/12-masteri-apartment/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/residential/12-masteri-apartment/06.jpeg"
+        "img": "/assets/images/residential/12-masteri-apartment/06.jpg"
       }
     ]
   },
@@ -558,24 +602,28 @@
     "urlPath": "vinhome-b6-apartment",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/13-vinhome-b6-apartment/01.jpeg"
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/13-vinhome-b6-apartment/02.jpeg"
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/13-vinhome-b6-apartment/03.jpeg"
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/13-vinhome-b6-apartment/04.jpeg"
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/13-vinhome-b6-apartment/05.jpeg"
+        "img": "/assets/images/residential/13-vinhome-b6-apartment/05.jpg"
       }
     ]
   },
@@ -589,24 +637,28 @@
     "urlPath": "the-park-residence",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/14-the-park-residence/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/14-the-park-residence/01.jpeg"
+        "img": "/assets/images/residential/14-the-park-residence/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/14-the-park-residence/02.jpeg"
+        "img": "/assets/images/residential/14-the-park-residence/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/14-the-park-residence/03.jpeg"
+        "img": "/assets/images/residential/14-the-park-residence/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/14-the-park-residence/04.jpeg"
+        "img": "/assets/images/residential/14-the-park-residence/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/14-the-park-residence/05.jpeg"
+        "img": "/assets/images/residential/14-the-park-residence/05.jpg"
       }
     ]
   },
@@ -620,36 +672,40 @@
     "urlPath": "north-saigon-apartment",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/residential/15-north-saigon-apartment/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/residential/15-north-saigon-apartment/01.jpeg"
+        "img": "/assets/images/residential/15-north-saigon-apartment/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/residential/15-north-saigon-apartment/02.jpeg"
+        "img": "/assets/images/residential/15-north-saigon-apartment/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/residential/15-north-saigon-apartment/03.jpeg"
+        "img": "/assets/images/residential/15-north-saigon-apartment/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/residential/15-north-saigon-apartment/04.jpeg"
+        "img": "/assets/images/residential/15-north-saigon-apartment/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/residential/15-north-saigon-apartment/05.jpeg"
+        "img": "/assets/images/residential/15-north-saigon-apartment/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/residential/15-north-saigon-apartment/06.jpeg"
+        "img": "/assets/images/residential/15-north-saigon-apartment/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/residential/15-north-saigon-apartment/07.jpeg"
+        "img": "/assets/images/residential/15-north-saigon-apartment/07.jpg"
       },
       {
         "id": 8,
-        "img": "/assets/images/residential/15-north-saigon-apartment/08.jpeg"
+        "img": "/assets/images/residential/15-north-saigon-apartment/08.jpg"
       }
     ]
   },
@@ -663,52 +719,56 @@
     "urlPath": "serenity-dental",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/commercial/16-serenity-dental/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/commercial/16-serenity-dental/01.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/commercial/16-serenity-dental/02.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/commercial/16-serenity-dental/03.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/commercial/16-serenity-dental/04.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/commercial/16-serenity-dental/05.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/commercial/16-serenity-dental/06.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/commercial/16-serenity-dental/07.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/07.jpg"
       },
       {
         "id": 8,
-        "img": "/assets/images/commercial/16-serenity-dental/08.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/08.jpg"
       },
       {
         "id": 9,
-        "img": "/assets/images/commercial/16-serenity-dental/09.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/09.jpg"
       },
       {
         "id": 10,
-        "img": "/assets/images/commercial/16-serenity-dental/10.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/10.jpg"
       },
       {
         "id": 11,
-        "img": "/assets/images/commercial/16-serenity-dental/11.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/11.jpg"
       },
       {
         "id": 12,
-        "img": "/assets/images/commercial/16-serenity-dental/12.jpeg"
+        "img": "/assets/images/commercial/16-serenity-dental/12.jpg"
       }
     ]
   },
@@ -722,32 +782,32 @@
     "urlPath": "new-leaf-coffee-&-tea",
     "imgCollection": [
       {
-        "id": 1,
-        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/01.jpeg"
+        "id": 0,
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/00.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/02.jpeg"
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/03.jpeg"
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/04.jpeg"
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/05.jpeg"
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/06.jpeg"
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/07.jpeg"
+        "img": "/assets/images/commercial/17-new-leaf-coffee-&-tea/07.jpg"
       }
     ]
   },
@@ -761,28 +821,32 @@
     "urlPath": "my-now-llc",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/commercial/18-my-now-llc/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/commercial/18-my-now-llc/01.jpeg"
+        "img": "/assets/images/commercial/18-my-now-llc/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/commercial/18-my-now-llc/02.jpeg"
+        "img": "/assets/images/commercial/18-my-now-llc/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/commercial/18-my-now-llc/03.jpeg"
+        "img": "/assets/images/commercial/18-my-now-llc/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/commercial/18-my-now-llc/04.jpeg"
+        "img": "/assets/images/commercial/18-my-now-llc/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/commercial/18-my-now-llc/05.jpeg"
+        "img": "/assets/images/commercial/18-my-now-llc/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/commercial/18-my-now-llc/06.jpeg"
+        "img": "/assets/images/commercial/18-my-now-llc/06.jpg"
       }
     ]
   },
@@ -796,24 +860,28 @@
     "urlPath": "kb-shop",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/commercial/19-kb-shop/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/commercial/19-kb-shop/01.jpeg"
+        "img": "/assets/images/commercial/19-kb-shop/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/commercial/19-kb-shop/02.jpeg"
+        "img": "/assets/images/commercial/19-kb-shop/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/commercial/19-kb-shop/03.jpeg"
+        "img": "/assets/images/commercial/19-kb-shop/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/commercial/19-kb-shop/04.jpeg"
+        "img": "/assets/images/commercial/19-kb-shop/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/commercial/19-kb-shop/05.jpeg"
+        "img": "/assets/images/commercial/19-kb-shop/05.jpg"
       }
     ]
   },
@@ -827,36 +895,40 @@
     "urlPath": "sweet-delights",
     "imgCollection": [
       {
+        "id": 0,
+        "img": "/assets/images/commercial/20-sweet-delights/00.jpg"
+      },
+      {
         "id": 1,
-        "img": "/assets/images/commercial/20-sweet-delights/01.jpeg"
+        "img": "/assets/images/commercial/20-sweet-delights/01.jpg"
       },
       {
         "id": 2,
-        "img": "/assets/images/commercial/20-sweet-delights/02.jpeg"
+        "img": "/assets/images/commercial/20-sweet-delights/02.jpg"
       },
       {
         "id": 3,
-        "img": "/assets/images/commercial/20-sweet-delights/03.jpeg"
+        "img": "/assets/images/commercial/20-sweet-delights/03.jpg"
       },
       {
         "id": 4,
-        "img": "/assets/images/commercial/20-sweet-delights/04.jpeg"
+        "img": "/assets/images/commercial/20-sweet-delights/04.jpg"
       },
       {
         "id": 5,
-        "img": "/assets/images/commercial/20-sweet-delights/05.jpeg"
+        "img": "/assets/images/commercial/20-sweet-delights/05.jpg"
       },
       {
         "id": 6,
-        "img": "/assets/images/commercial/20-sweet-delights/06.jpeg"
+        "img": "/assets/images/commercial/20-sweet-delights/06.jpg"
       },
       {
         "id": 7,
-        "img": "/assets/images/commercial/20-sweet-delights/07.jpeg"
+        "img": "/assets/images/commercial/20-sweet-delights/07.jpg"
       },
       {
         "id": 8,
-        "img": "/assets/images/commercial/20-sweet-delights/08.jpeg"
+        "img": "/assets/images/commercial/20-sweet-delights/08.jpg"
       }
     ]
   }
