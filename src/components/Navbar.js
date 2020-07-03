@@ -21,8 +21,8 @@ const Nav = styled.nav`
     margin-right: 3.5rem;
   }
 
-  a {
-    /* color: white; */
+  a:hover {
+    color: var(--secondary-color);
   }
 `
 
@@ -52,7 +52,7 @@ class Navbar extends Component {
       this.props.scrollToCadDrafts ||
       this.props.scrollToSchoolProjects
     ) {
-      rightNav =  (
+      rightNav = (
         <RightNav>
           <div
             onClick={() => {

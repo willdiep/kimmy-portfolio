@@ -8,7 +8,8 @@ export const GlobalStyle = createGlobalStyle`
 
   html {
     --main-text-color: #5b5b5b;
-    --body-color: rgba(255,255,255,1)
+    --body-color: rgba(255,255,255,1);
+    --secondary-color: #c9e9eb;
   }
 
   body {
