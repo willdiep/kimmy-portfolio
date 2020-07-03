@@ -44,14 +44,15 @@ const RightNav = styled.div`
 
 class Navbar extends Component {
   render() {
-    return (
-      <Nav>
-        <LeftNav>
-          <Link to='/'>
-            <LogoImg src={logo} alt='logo' />
-          </Link>
-        </LeftNav>
+    let rightNav
 
+    if (
+      this.props.scrollToResidential ||
+      this.props.scrollToCommercial ||
+      this.props.scrollToCadDrafts ||
+      this.props.scrollToSchoolProjects
+    ) {
+      rightNav =  (
         <RightNav>
           <div
             onClick={() => {
@@ -102,6 +103,43 @@ class Navbar extends Component {
             <a href={resumePDF}>Resume</a>
           </div>
         </RightNav>
+      )
+    } else {
+      rightNav = (
+        <RightNav>
+          <div>
+            <Link to='/'>Residential</Link>
+          </div>
+
+          <div>
+            <Link to='/'>Commercial</Link>
+          </div>
+
+          <div>
+            <Link to='/'>CAD Drafts</Link>
+          </div>
+
+          <div>
+            <Link to='/'>School Projects</Link>
+          </div>
+
+          <div>
+            {/* <Link to='/resume'>Resume</Link> */}
+            <a href={resumePDF}>Resume</a>
+          </div>
+        </RightNav>
+      )
+    }
+
+    return (
+      <Nav>
+        <LeftNav>
+          <Link to='/'>
+            <LogoImg src={logo} alt='logo' />
+          </Link>
+        </LeftNav>
+
+        {rightNav}
       </Nav>
     )
   }

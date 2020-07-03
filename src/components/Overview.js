@@ -179,7 +179,7 @@ class Overview extends Component {
           scrollToCommercial={this.scrollToCommercial}
           scrollToResidential={this.scrollToResidential}
           scrollToCadDrafts={this.scrollToCadDrafts}
-          scrollToscrollToSchoolProjects={this.scrollToSchoolProjects}
+          scrollToSchoolProjects={this.scrollToSchoolProjects}
         />
 
         <ProjectTypeHeader ref={this.scrollToResidential}>

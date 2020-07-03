@@ -1,5 +1,12 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##
+
+Next sprint:
+
+* Navbar in ProjectDetail renders category section id
+
+
 ## Available Scripts
 
 In the project directory, you can run:

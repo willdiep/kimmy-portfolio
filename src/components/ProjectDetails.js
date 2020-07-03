@@ -4,7 +4,8 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 import ImgModal from './ImgModal'
-// import Overview from './Overview'
+import Navbar from './Navbar'
+
 
 const Container = styled.article`
   /* background-color: lightskyblue; */
@@ -152,6 +153,7 @@ class ProjectDetails extends Component {
 
     return (
       <>
+      <Navbar />
         <Container>
           <ImgSection>
             {projectDataArray.slice(1, projectDataArray.length).map((item) => {
