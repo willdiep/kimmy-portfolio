@@ -169,9 +169,9 @@ class Overview extends Component {
       }
     }
 
-    // console.log(cadDrafts)
+    console.log(cadDraftsArr)
     // console.log(schoolProjects)
-    // console.log(schoolProjectsArr)
+    console.log(schoolProjectsArr)
 
     return (
       <>
@@ -295,28 +295,30 @@ class Overview extends Component {
           {schoolProjectsArr.map((item) => {
             return (
               <section>
-                <Figure onClick={() => this.handleImgId(item.id)}>
+                {/* <Figure onClick={() => this.handleImgId(item.id)}> */}
+                <Figure>
                   <Img key={item.id} src={item.img} alt='' />
-                  <OverlayContainer onClick={() => this.hanndleOverlayClick()}>
+                  {/* <OverlayContainer onClick={() => this.hanndleOverlayClick()}>
                     <FontAwesomeIcon
                       icon={faSearchPlus}
                       color='white'
                       size='3x'
-                    />
-                  </OverlayContainer>
+                      />
+                  </OverlayContainer> */}
                 </Figure>
+                      <ProjectTitle>{item.description}</ProjectTitle>
               </section>
             )
           })}
 
-          {this.state.imgModalClicked && (
+          {/* {this.state.imgModalClicked && (
             <ImgModal
               imgId={this.state.imgId}
               projectData={schoolProjects}
               closeBtn={this.handleOverlayClose}
               escKeyDown={this.handlEscKeyDown}
             />
-          )}
+          )} */}
         </GridContainer>
       </>
     )

@@ -1038,22 +1038,27 @@
     "imgCollection": [
       {
         "id": 1,
+        "description": "Modern Rustic Bathroom",
         "img": "/assets/images/school-projects/01.jpg"
       },
       {
         "id": 2,
+        "description": "Modern Moroccan Bedroom",
         "img": "/assets/images/school-projects/02.jpg"
       },
       {
         "id": 3,
+        "description": "A Bug's Life",
         "img": "/assets/images/school-projects/03.jpg"
       },
       {
         "id": 4,
+        "description": "Form Abstract",
         "img": "/assets/images/school-projects/04.jpg"
       },
       {
         "id": 5,
+        "description": "XYZ Abstract",
         "img": "/assets/images/school-projects/05.jpg"
       }
     ]
