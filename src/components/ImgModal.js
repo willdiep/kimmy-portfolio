@@ -48,14 +48,24 @@ class ImgModal extends Component {
 
     // console.log(imgId)
     // console.log(projectData)
-
-    this.setState({
-      cursor: imgId,
-      imgCollection: projectData.imgCollection.slice(
-        1,
-        projectData.imgCollection.length
-      ),
-    })
+    
+    if (
+      projectData.category === 'residential' ||
+      projectData.category === 'commercial'
+    ) {
+      this.setState({
+        cursor: imgId,
+        imgCollection: projectData.imgCollection.slice(
+          1,
+          projectData.imgCollection.length
+        ),
+      })
+    } else if (projectData.category === 'cad-drafts') {
+      this.setState({
+        cursor: imgId,
+        imgCollection: projectData.imgCollection,
+      })
+    }
 
     window.addEventListener('keydown', (e) => {
       // console.log(e.keyCode)

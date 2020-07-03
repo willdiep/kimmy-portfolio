@@ -34,7 +34,6 @@ const LogoImg = styled.img`
   width: 4rem;
 `
 
-
 const RightNav = styled.div`
   display: flex;
 
@@ -47,29 +46,45 @@ class Navbar extends Component {
   render() {
     return (
       <Nav>
-          <LeftNav>
-            <Link to='/'>
-              <LogoImg src={logo} alt='logo' />
-            </Link>
-          </LeftNav>
+        <LeftNav>
+          <Link to='/'>
+            <LogoImg src={logo} alt='logo' />
+          </Link>
+        </LeftNav>
 
-          <RightNav>
-            <div>
-              <Link to='/#residential'>Residential</Link>
-            </div>
-            <div>
-              <Link to='/not-set'>Commercial</Link>
-            </div>
+        <RightNav>
+          <div onClick={() => {
+              // console.log(this.props.scroll)
+              this.props.scrollToResidential.current.scrollIntoView({ behavior: 'smooth' })
+            }}>
+            <Link>Residential</Link>
+          </div>
 
-            {/* <div>
-            <Link to='/about'>About</Link>
-          </div> */}
+          <div
+            onClick={() => {
+              // console.log(this.props.scroll)
+              this.props.scrollToCommercial.current.scrollIntoView({ behavior: 'smooth' })
+            }}
+          >
+            <Link>Commercial</Link>
+          </div>
 
-            <div>
-              {/* <Link to='/resume'>Resume</Link> */}
-              <a href={resumePDF}>Resume</a>
-            </div>
-          </RightNav>
+          <div
+            onClick={() => {
+              // console.log(this.props.scroll)
+              this.props.scrollToCadDrafts.current.scrollIntoView({ behavior: 'smooth' })
+            }}
+          >
+            <Link>CAD Drafts</Link>
+          </div>
+
+
+
+          <div>
+            {/* <Link to='/resume'>Resume</Link> */}
+            <a href={resumePDF}>Resume</a>
+          </div>
+        </RightNav>
       </Nav>
     )
   }

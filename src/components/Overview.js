@@ -4,6 +4,8 @@ import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 import data from '../data.json'
+import ImgModal from './ImgModal'
+import Navbar from './Navbar'
 
 const ProjectTypeHeader = styled.h2`
   text-transform: uppercase;
@@ -64,11 +66,19 @@ const Figure = styled.figure`
 `
 
 class Overview extends Component {
-  state = {
-    imgModalClicked: false,
-    imgId: 0,
-    objName: '',
-    imgUrlPath: null,
+  constructor(props) {
+    super(props)
+
+    this.scrollToCommercial = React.createRef()
+    this.scrollToResidential = React.createRef()
+    this.scrollToCadDrafts = React.createRef()
+
+    this.state = {
+      imgModalClicked: false,
+      imgId: 0,
+      objName: '',
+      imgUrlPath: null,
+    }
   }
 
   hanndleOverlayClick = () => {
@@ -108,11 +118,13 @@ class Overview extends Component {
     })
   }
   render() {
-    let projectArr = []
+    let projectsArr = []
     let firstProjectImgId
     // let projectUrlPath
     let firstObjName
     let category
+    let cadDraftsArr = []
+    let cadDrafts = []
 
     for (let key in data) {
       let imgCollection = data[key].imgCollection
@@ -134,7 +146,7 @@ class Overview extends Component {
         categoryUrlPath = `/commercial/${projectUrlPath}`
       }
 
-      projectArr.push({
+      projectsArr.push({
         title: title,
         id: firstProjectImgId,
         img: firstProjectImg,
@@ -142,18 +154,30 @@ class Overview extends Component {
         categoryUrlPath,
         category,
       })
+
+      if (data[key].category === 'cad-drafts') {
+        cadDrafts = data[key]
+        cadDraftsArr = data[key].imgCollection
+      }
     }
 
-    // console.log(data)
-    // console.log(projectArr)
+    console.log(cadDrafts)
 
     return (
       <>
-        <ProjectTypeHeader>residential</ProjectTypeHeader>
+        <Navbar
+          scrollToCommercial={this.scrollToCommercial}
+          scrollToResidential={this.scrollToResidential}
+          scrollToCadDrafts={this.scrollToCadDrafts}
+        />
+
+        <ProjectTypeHeader ref={this.scrollToResidential}>
+          residential
+        </ProjectTypeHeader>
         <br></br>
 
         <GridContainer>
-          {projectArr
+          {projectsArr
             .filter((project) => project.category === 'residential')
             .map((item) => {
               return (
@@ -182,10 +206,12 @@ class Overview extends Component {
             })}
         </GridContainer>
 
-        <ProjectTypeHeader commercial>commercial</ProjectTypeHeader>
+        <ProjectTypeHeader commercial ref={this.scrollToCommercial}>
+          commercial
+        </ProjectTypeHeader>
 
         <GridContainer>
-          {projectArr
+          {projectsArr
             .filter((project) => project.category === 'commercial')
             .map((item) => {
               return (
@@ -215,6 +241,38 @@ class Overview extends Component {
         </GridContainer>
 
         <br></br>
+
+        <ProjectTypeHeader commercial ref={this.scrollToCadDrafts}>
+          cad drafts
+        </ProjectTypeHeader>
+
+        <GridContainer>
+          {cadDraftsArr.map((item) => {
+            return (
+              <section>
+                <Figure onClick={() => this.handleImgId(item.id)}>
+                  <Img key={item.id} src={item.img} alt='' />
+                  <OverlayContainer onClick={() => this.hanndleOverlayClick()}>
+                    <FontAwesomeIcon
+                      icon={faSearchPlus}
+                      color='white'
+                      size='3x'
+                    />
+                  </OverlayContainer>
+                </Figure>
+              </section>
+            )
+          })}
+
+          {this.state.imgModalClicked && (
+            <ImgModal
+              imgId={this.state.imgId}
+              projectData={cadDrafts}
+              closeBtn={this.handleOverlayClose}
+              escKeyDown={this.handlEscKeyDown}
+            />
+          )}
+        </GridContainer>
       </>
     )
   }
