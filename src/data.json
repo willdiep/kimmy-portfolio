@@ -1030,5 +1030,32 @@
         "img": "/assets/images/cad-drafts/09.jpg"
       }
     ]
+  },
+  "schoolProjects": {
+    "objName": "schoolProjects",
+    "title": "School Projects",
+    "category": "school-projects",
+    "imgCollection": [
+      {
+        "id": 1,
+        "img": "/assets/images/school-projects/01.jpg"
+      },
+      {
+        "id": 2,
+        "img": "/assets/images/school-projects/02.jpg"
+      },
+      {
+        "id": 3,
+        "img": "/assets/images/school-projects/03.jpg"
+      },
+      {
+        "id": 4,
+        "img": "/assets/images/school-projects/04.jpg"
+      },
+      {
+        "id": 5,
+        "img": "/assets/images/school-projects/05.jpg"
+      }
+    ]
   }
 }

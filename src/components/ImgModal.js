@@ -60,7 +60,7 @@ class ImgModal extends Component {
           projectData.imgCollection.length
         ),
       })
-    } else if (projectData.category === 'cad-drafts') {
+    } else if (projectData.category === 'cad-drafts' || projectData.category === 'school-projects') {
       this.setState({
         cursor: imgId,
         imgCollection: projectData.imgCollection,

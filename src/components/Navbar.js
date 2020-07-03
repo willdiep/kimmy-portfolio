@@ -53,17 +53,23 @@ class Navbar extends Component {
         </LeftNav>
 
         <RightNav>
-          <div onClick={() => {
+          <div
+            onClick={() => {
               // console.log(this.props.scroll)
-              this.props.scrollToResidential.current.scrollIntoView({ behavior: 'smooth' })
-            }}>
+              this.props.scrollToResidential.current.scrollIntoView({
+                behavior: 'smooth',
+              })
+            }}
+          >
             <Link>Residential</Link>
           </div>
 
           <div
             onClick={() => {
               // console.log(this.props.scroll)
-              this.props.scrollToCommercial.current.scrollIntoView({ behavior: 'smooth' })
+              this.props.scrollToCommercial.current.scrollIntoView({
+                behavior: 'smooth',
+              })
             }}
           >
             <Link>Commercial</Link>
@@ -72,13 +78,24 @@ class Navbar extends Component {
           <div
             onClick={() => {
               // console.log(this.props.scroll)
-              this.props.scrollToCadDrafts.current.scrollIntoView({ behavior: 'smooth' })
+              this.props.scrollToCadDrafts.current.scrollIntoView({
+                behavior: 'smooth',
+              })
             }}
           >
             <Link>CAD Drafts</Link>
           </div>
 
-
+          <div
+            onClick={() => {
+              // console.log(this.props.scroll)
+              this.props.scrollToSchoolProjects.current.scrollIntoView({
+                behavior: 'smooth',
+              })
+            }}
+          >
+            <Link>School Projects</Link>
+          </div>
 
           <div>
             {/* <Link to='/resume'>Resume</Link> */}

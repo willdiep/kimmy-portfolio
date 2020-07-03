@@ -72,6 +72,7 @@ class Overview extends Component {
     this.scrollToCommercial = React.createRef()
     this.scrollToResidential = React.createRef()
     this.scrollToCadDrafts = React.createRef()
+    this.scrollToSchoolProjects = React.createRef()
 
     this.state = {
       imgModalClicked: false,
@@ -125,6 +126,8 @@ class Overview extends Component {
     let category
     let cadDraftsArr = []
     let cadDrafts = []
+    let schoolProjectsArr = []
+    let schoolProjects = []
 
     for (let key in data) {
       let imgCollection = data[key].imgCollection
@@ -159,9 +162,16 @@ class Overview extends Component {
         cadDrafts = data[key]
         cadDraftsArr = data[key].imgCollection
       }
+
+      if (data[key].category === 'school-projects') {
+        schoolProjects = data[key]
+        schoolProjectsArr = data[key].imgCollection
+      }
     }
 
-    console.log(cadDrafts)
+    // console.log(cadDrafts)
+    // console.log(schoolProjects)
+    // console.log(schoolProjectsArr)
 
     return (
       <>
@@ -169,6 +179,7 @@ class Overview extends Component {
           scrollToCommercial={this.scrollToCommercial}
           scrollToResidential={this.scrollToResidential}
           scrollToCadDrafts={this.scrollToCadDrafts}
+          scrollToscrollToSchoolProjects={this.scrollToSchoolProjects}
         />
 
         <ProjectTypeHeader ref={this.scrollToResidential}>
@@ -268,6 +279,40 @@ class Overview extends Component {
             <ImgModal
               imgId={this.state.imgId}
               projectData={cadDrafts}
+              closeBtn={this.handleOverlayClose}
+              escKeyDown={this.handlEscKeyDown}
+            />
+          )}
+        </GridContainer>
+
+        <br></br>
+
+        <ProjectTypeHeader commercial ref={this.scrollToSchoolProjects}>
+          school projects
+        </ProjectTypeHeader>
+
+        <GridContainer>
+          {schoolProjectsArr.map((item) => {
+            return (
+              <section>
+                <Figure onClick={() => this.handleImgId(item.id)}>
+                  <Img key={item.id} src={item.img} alt='' />
+                  <OverlayContainer onClick={() => this.hanndleOverlayClick()}>
+                    <FontAwesomeIcon
+                      icon={faSearchPlus}
+                      color='white'
+                      size='3x'
+                    />
+                  </OverlayContainer>
+                </Figure>
+              </section>
+            )
+          })}
+
+          {this.state.imgModalClicked && (
+            <ImgModal
+              imgId={this.state.imgId}
+              projectData={schoolProjects}
               closeBtn={this.handleOverlayClose}
               escKeyDown={this.handlEscKeyDown}
             />
