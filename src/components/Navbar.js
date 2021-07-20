@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
-import resumePDF from '../assets/kimmyng-resume.pdf'
+import resumePDF from '../assets/resume-july2021.pdf'
 import businessPlanPDF from '../assets/business-plan-assignment.pdf'
 
 const Nav = styled.nav`
