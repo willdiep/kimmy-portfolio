@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-// import Navbar from './components/Navbar'
 import Home from './pages/Home'
-// import Gallery from './components/Gallery'
+import ProfessionalPractice from './pages/ProfessionalPractice'
 
 import ProjectDetails from './components/ProjectDetails'
 import Footer from './components/Footer'
@@ -21,7 +20,6 @@ export const Layout = styled.main`
 `
 
 class App extends Component {
-
   render() {
     return (
       <>
@@ -32,6 +30,10 @@ class App extends Component {
 
             <Layout>
               <Switch>
+                <Route path='/professional-practice'>
+                  <ProfessionalPractice />
+                </Route>
+
                 <Route path='/residential/:id'>
                   <ProjectDetails data={data} />
                 </Route>
@@ -41,9 +43,7 @@ class App extends Component {
                 </Route>
 
                 <Route path='/'>
-                  {/* <Home ref={this.scrollDiv} /> */}
                   <Home />
-                  {/* <Home /> Links to <Gallery /> */}
                 </Route>
               </Switch>
             </Layout>

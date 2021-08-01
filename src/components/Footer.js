@@ -11,7 +11,7 @@ const Footer = () => {
 
   `
 
-  return <FooterStyle>Kimmy Nguyen - Interior Designer &copy; 2020</FooterStyle>
+  return <FooterStyle>Kimmy Nguyen - Interior Designer &copy; {new Date().getFullYear()}</FooterStyle>
 }
 
 export default Footer

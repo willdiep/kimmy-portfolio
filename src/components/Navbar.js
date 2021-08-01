@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 import logo from '../assets/logo.png'
 import resumePDF from '../assets/resume-july2021.pdf'
-import businessPlanPDF from '../assets/business-plan-assignment.pdf'
+// import businessPlanPDF from '../assets/business-plan-assignment.pdf'
 
 const Nav = styled.nav`
   /* background-color: orange; */
@@ -100,12 +100,13 @@ class Navbar extends Component {
           </div>
 
           <div>
-            <a href={businessPlanPDF}>Business Plan</a>
+            {/* <a href={businessPlanPDF}>Business Plan</a> */}
+            <Link to='/professional-practice'>Professional Practice</Link>
           </div>
 
           <div>
             {/* <Link to='/resume'>Resume</Link> */}
-            <a href={resumePDF}>Resume</a>
+            <a href={resumePDF}>About</a>
           </div>
         </RightNav>
       )
@@ -130,7 +131,7 @@ class Navbar extends Component {
 
           <div>
             {/* <Link to='/resume'>Resume</Link> */}
-            <a href={resumePDF}>Resume</a>
+            <a href={resumePDF}>About</a>
           </div>
         </RightNav>
       )
