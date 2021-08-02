@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
 import Navbar from '../components/Navbar'
 import styled from 'styled-components'
-import businessPlanPDF from '../assets/business-plan-assignment.pdf'
+import businessPlanPdf from '../assets/business-plan-assignment.pdf'
 import mailerImg from '../assets/mailer.jpg'
+import businessFormationPdf from '../assets/business-formation-assignment.pdf'
+import letterOfAgreementPdf from '../assets/letter-of-agreement-assignment.pdf'
+import targetMarketAnalysisPdf from '../assets/target-market-analysis-assignment.pdf'
 
 const Container = styled.article`
   max-width: 1440px;
@@ -16,8 +19,10 @@ const Heading = styled.h3`
 
 const AnchorLink = styled.a`
   color: var(--secondary-color);
+  font-size: 1.17em;
+  text-decoration: underline;
   margin-bottom: 1rem;
-  display: inline-block;
+  display: block;
 `
 
 class ProfessionalPractice extends Component {
@@ -41,24 +46,21 @@ class ProfessionalPractice extends Component {
             a professional interior designer.
           </p>
 
-          <Heading>Letter of Agreement</Heading>
-          <p></p>
-          <p></p>
+          <AnchorLink href={letterOfAgreementPdf}>
+            Letter of Agreement
+          </AnchorLink>
 
-          <Heading>Business Formation</Heading>
-          <p></p>
-          <p></p>
+          <AnchorLink href={businessFormationPdf}>
+            Business Formation
+          </AnchorLink>
 
-          <Heading>Business Plan</Heading>
-          <AnchorLink href={businessPlanPDF}>View Business Plan document</AnchorLink>
+          <AnchorLink href={businessPlanPdf}>Business Plan</AnchorLink>
 
-          <Heading>Target Market Analysis</Heading>
-          <p></p>
-          <p></p>
+          <AnchorLink href={targetMarketAnalysisPdf}>
+            Target Market Analysis
+          </AnchorLink>
 
-          <Heading>Marketing Mailer</Heading>
-          <AnchorLink href={mailerImg}>View Marketing Mailer document</AnchorLink>
-
+          <AnchorLink href={mailerImg}>Marketing Mailer</AnchorLink>
         </Container>
       </>
     )
