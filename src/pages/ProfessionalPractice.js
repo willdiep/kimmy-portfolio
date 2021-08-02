@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import Navbar from '../components/Navbar'
 import styled from 'styled-components'
 import businessPlanPDF from '../assets/business-plan-assignment.pdf'
+import mailerImg from '../assets/mailer.jpg'
 
 const Container = styled.article`
   max-width: 1440px;
@@ -41,15 +42,23 @@ class ProfessionalPractice extends Component {
           </p>
 
           <Heading>Letter of Agreement</Heading>
+          <p></p>
+          <p></p>
 
           <Heading>Business Formation</Heading>
+          <p></p>
+          <p></p>
 
           <Heading>Business Plan</Heading>
           <AnchorLink href={businessPlanPDF}>View Business Plan document</AnchorLink>
 
           <Heading>Target Market Analysis</Heading>
+          <p></p>
+          <p></p>
 
           <Heading>Marketing Mailer</Heading>
+          <AnchorLink href={mailerImg}>View Business Plan document</AnchorLink>
+
         </Container>
       </>
     )
