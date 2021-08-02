@@ -57,7 +57,7 @@ class ProfessionalPractice extends Component {
           <p></p>
 
           <Heading>Marketing Mailer</Heading>
-          <AnchorLink href={mailerImg}>View Business Plan document</AnchorLink>
+          <AnchorLink href={mailerImg}>View Marketing Mailer document</AnchorLink>
 
         </Container>
       </>
