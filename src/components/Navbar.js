@@ -6,7 +6,6 @@ import resumePDF from '../assets/resume-july2021.pdf'
 // import businessPlanPDF from '../assets/business-plan-assignment.pdf'
 
 const Nav = styled.nav`
-  /* background-color: orange; */
   height: 100px;
   display: flex;
   align-items: center;
@@ -57,7 +56,6 @@ class Navbar extends Component {
         <RightNav>
           <div
             onClick={() => {
-              // console.log(this.props.scroll)
               this.props.scrollToResidential.current.scrollIntoView({
                 behavior: 'smooth',
               })
@@ -68,7 +66,6 @@ class Navbar extends Component {
 
           <div
             onClick={() => {
-              // console.log(this.props.scroll)
               this.props.scrollToCommercial.current.scrollIntoView({
                 behavior: 'smooth',
               })
@@ -79,7 +76,6 @@ class Navbar extends Component {
 
           <div
             onClick={() => {
-              // console.log(this.props.scroll)
               this.props.scrollToCadDrafts.current.scrollIntoView({
                 behavior: 'smooth',
               })
@@ -90,7 +86,6 @@ class Navbar extends Component {
 
           <div
             onClick={() => {
-              // console.log(this.props.scroll)
               this.props.scrollToSchoolProjects.current.scrollIntoView({
                 behavior: 'smooth',
               })
@@ -100,12 +95,10 @@ class Navbar extends Component {
           </div>
 
           <div>
-            {/* <a href={businessPlanPDF}>Business Plan</a> */}
             <Link to='/professional-practice'>Professional Practice</Link>
           </div>
 
           <div>
-            {/* <Link to='/resume'>Resume</Link> */}
             <a href={resumePDF}>About</a>
           </div>
         </RightNav>

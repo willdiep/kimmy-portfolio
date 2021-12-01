@@ -6,28 +6,22 @@ import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
 import ImgModal from './ImgModal'
 import Navbar from './Navbar'
 
-
 const Container = styled.article`
-  /* background-color: lightskyblue; */
-  /* margin: 0 1rem; */
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-areas: 'main sidebar';
 
-  @media (max-width: 768px) {
+  @media screen and (max-width: 768px) {
     display: grid;
-    /* grid-template-columns: 1fr; */
     grid-template-areas: 'sidebar' 'main';
   }
 `
 
 const ImgSection = styled.section`
-  /* background-color: green; */
   grid-area: main;
 `
 
 const DetailSection = styled.aside`
-  /* background-color: lightpink; */
   margin: 2rem 3rem;
   grid-area: sidebar;
 
@@ -37,7 +31,6 @@ const DetailSection = styled.aside`
 `
 
 const Img = styled.img`
-  /* height: 300px; */
   width: 100%;
 `
 
@@ -58,14 +51,11 @@ const OverlayContainer = styled.div`
 `
 
 const Figure = styled.figure`
-  /* background-color: yellow; */
   display: flex;
   position: relative;
 
   ${OverlayContainer}:hover {
     opacity: 1;
-    /* opacity: 0.5; */
-    /* background-color: red; */
     z-index: 1;
   }
 `
@@ -117,9 +107,7 @@ class ProjectDetails extends Component {
   render() {
     const pathId = this.props.match.params.id.toLowerCase().split('-').join('')
     // console.log(pathId)
-
     // console.log(this.data)
-
     // console.log(this.props.data) // apartmentAweData: {}
     let projectDataArray = []
 
@@ -153,7 +141,7 @@ class ProjectDetails extends Component {
 
     return (
       <>
-      <Navbar />
+        <Navbar />
         <Container>
           <ImgSection>
             {projectDataArray.slice(1, projectDataArray.length).map((item) => {
@@ -175,9 +163,7 @@ class ProjectDetails extends Component {
           <DetailSection>
             <div>
               <h2>{heading}</h2>
-
               <br></br>
-
               <DescriptionText>
                 {year} | {description}
               </DescriptionText>
@@ -193,8 +179,6 @@ class ProjectDetails extends Component {
             />
           )}
         </Container>
-
-        {/* <Overview /> */}
       </>
     )
   }

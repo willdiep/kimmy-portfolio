@@ -11,7 +11,6 @@ const ProjectTypeHeader = styled.h2`
   text-transform: uppercase;
   text-align: center;
   padding: ${(props) => (props.commercial ? '2rem 0 3rem 0' : '2rem 0')};
-  /* background-color: orange; */
   margin-top: ${(props) => props.commercial && '5rem'};
 `
 
@@ -32,7 +31,6 @@ const GridContainer = styled.article`
 const Img = styled.img`
   display: block;
   width: 100%;
-  /* height: auto; */
   height: 100%;
 `
 
@@ -53,14 +51,11 @@ const OverlayContainer = styled.div`
 `
 
 const Figure = styled.figure`
-  /* background-color: yellow; */
   display: flex;
   position: relative;
 
   ${OverlayContainer}:hover {
     opacity: 1;
-    /* opacity: 0.5; */
-    /* background-color: red; */
     z-index: 1;
   }
 `
@@ -127,6 +122,7 @@ class Overview extends Component {
     let cadDraftsArr = []
     let cadDrafts = []
     let schoolProjectsArr = []
+    // eslint-disable-next-line
     let schoolProjects = []
 
     for (let key in data) {
@@ -169,9 +165,9 @@ class Overview extends Component {
       }
     }
 
-    console.log(cadDraftsArr)
+    // console.log(cadDraftsArr)
     // console.log(schoolProjects)
-    console.log(schoolProjectsArr)
+    // console.log(schoolProjectsArr)
 
     return (
       <>
@@ -306,7 +302,7 @@ class Overview extends Component {
                       />
                   </OverlayContainer> */}
                 </Figure>
-                      <ProjectTitle>{item.description}</ProjectTitle>
+                <ProjectTitle>{item.description}</ProjectTitle>
               </section>
             )
           })}

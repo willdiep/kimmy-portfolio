@@ -1,21 +1,16 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Home from './pages/Home'
-import ProfessionalPractice from './pages/ProfessionalPractice'
-
-import ProjectDetails from './components/ProjectDetails'
-import Footer from './components/Footer'
-
-// import * as data from './data'
-import data from './data.json'
-
 import './styles/reboot.css'
 import styled from 'styled-components'
 import { GlobalStyle } from './styles/GlobalStyles'
 import './assets/fonts/Josefin_Sans/static/JosefinSans-Thin.ttf'
+import Home from './pages/Home'
+import ProfessionalPractice from './pages/ProfessionalPractice'
+import ProjectDetails from './components/ProjectDetails'
+import Footer from './components/Footer'
+import data from './data.json'
 
 export const Layout = styled.main`
-  /* background-color: lightblue; */
   margin: 0 3rem;
 `
 
@@ -26,8 +21,6 @@ class App extends Component {
         <GlobalStyle />
         <Router>
           <div className='App'>
-            {/* <Navbar scroll={this.scrollDiv} /> */}
-
             <Layout>
               <Switch>
                 <Route path='/professional-practice'>
