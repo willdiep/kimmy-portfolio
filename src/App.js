@@ -1,52 +1,57 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import './styles/reboot.css'
 import styled from 'styled-components'
 import { GlobalStyle } from './styles/GlobalStyles'
-import './assets/fonts/Josefin_Sans/static/JosefinSans-Thin.ttf'
-import Home from './pages/Home'
-import ProfessionalPractice from './pages/ProfessionalPractice'
-import ProjectDetails from './components/ProjectDetails'
-import Footer from './components/Footer'
-import data from './data.json'
+import 'styles/reboot.css'
+import 'assets/fonts/Josefin_Sans/static/JosefinSans-Thin.ttf'
+import data from 'data.json'
+
+// import ProfessionalPractice from './pages/ProfessionalPractice'
+// import ProjectDetails from './components/ProjectDetails'
+import Home from 'modules/home/components'
+import Footer from 'modules/footer/components'
+import Commercial from 'modules/commercial/components'
+import Residential from 'modules/residential/components'
+import CadDrafts from 'modules/caddrafts/components'
+
+import Navbar from 'modules/navbar/components/Navbar'
 
 export const Layout = styled.main`
-  margin: 0 3rem;
+  margin: 0 20px;
 `
 
-class App extends Component {
-  render() {
-    return (
-      <>
-        <GlobalStyle />
-        <Router>
-          <div className='App'>
-            <Layout>
-              <Switch>
-                <Route path='/professional-practice'>
-                  <ProfessionalPractice />
-                </Route>
+function App() {
+  return (
+    <>
+      <GlobalStyle />
+      <Router>
+        <div className='App'>
+          <Navbar />
+          <Layout>
+            <Switch>
+             <Route path='/residential'>
+                <Residential data={data} />
+              </Route>
 
-                <Route path='/residential/:id'>
-                  <ProjectDetails data={data} />
-                </Route>
+              <Route path='/commercial'>
+                <Commercial data={data} />
+              </Route>
 
-                <Route path='/commercial/:id'>
-                  <ProjectDetails data={data} />
-                </Route>
+              <Route path='/cad-drafts'>
+                <CadDrafts data={data} />
+              </Route>
 
-                <Route path='/'>
-                  <Home />
-                </Route>
-              </Switch>
-            </Layout>
+              <Route path='/'>
+                <Home />
+              </Route>
+            </Switch>
+          </Layout>
 
-            <Footer />
-          </div>
-        </Router>
-      </>
-    )
-  }
+          <Footer />
+        </div>
+      </Router>
+    </>
+  )
 }
 
 export default App

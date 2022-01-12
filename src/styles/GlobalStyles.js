@@ -6,6 +6,8 @@ export const GlobalStyle = createGlobalStyle`
   src: local('JosefinSans'), url(./assets/fonts/Josefin_Sans/static/JosefinSans-Thin.ttf) format('truetype');
 }
 
+  @font-face { font-family: brandongrotesquemedium; src: url("https://use.typekit.net/af/d03e48/000000000000000077359df2/30/l?subset_id=1&fvd=n5&v=3") format("woff2"), url("https://use.typekit.net/af/d03e48/000000000000000077359df2/30/d?subset_id=1&fvd=n5&v=3") format("woff"), url("https://use.typekit.net/af/d03e48/000000000000000077359df2/30/a?subset_id=1&fvd=n5&v=3") format("opentype");
+
   html {
     --main-text-color: #5b5b5b;
     --body-color: rgba(255,255,255,1);

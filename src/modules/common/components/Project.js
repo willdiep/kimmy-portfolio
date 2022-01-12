@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearchPlus } from '@fortawesome/free-solid-svg-icons'
-import ImgModal from './ImgModal'
+import ImgModal from '../../../components/ImgModal'
 
 const Container = styled.article``
 
